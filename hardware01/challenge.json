@@ -1,0 +1,36 @@
+{
+  "title": "UART to I2C",
+  "description": "I need a UART to I2C converter, use the slice!",
+  "authors": [
+    "Giovanni Minotti <@Giotino>"
+  ],
+  "tags": [
+    "hardware"
+  ],
+  "hiddenTags": [],
+  "order": 21,
+  "flags": [
+    "^ECSC\\{f1rs7_st3p5_1nt0_th3_h4rdw4r3_c4t3g0ry\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "BOARD.md",
+      "type": "upload",
+      "path": "./attachments/BOARD.md",
+      "dynamic": false
+    },
+    {
+      "name": "SLICE_POWER.jpg",
+      "type": "upload",
+      "path": "./attachments/SLICE_POWER.jpg",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

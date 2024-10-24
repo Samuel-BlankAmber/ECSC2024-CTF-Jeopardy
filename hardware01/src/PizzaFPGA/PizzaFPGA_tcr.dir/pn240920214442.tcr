@@ -1,0 +1,22 @@
+#Start recording tcl command: 9/20/2024 15:25:05
+#Project Location: F:/Gits/Challenge-154/src/PizzaFPGA; Project name: PizzaFPGA
+prj_project open "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA.ldf"
+prj_src remove "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/ALU.vhd" "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/CU.vhd" "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FMC_COM.vhd"
+prj_run Export -impl syn -task Jedecgen
+prj_run Synthesis -impl syn -task Lattice_Synthesis
+prj_run Synthesis -impl syn -task Lattice_Synthesis
+prj_run Synthesis -impl syn -task Lattice_Synthesis
+prj_run Synthesis -impl syn -task Lattice_Synthesis
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_src add "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM/PizzaFPGA_SIM.spf"
+prj_src add "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM/PizzaFPGA_SIM.spf"
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task TimingSimFileVHD
+prj_run Export -impl syn -task Bitgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen -forceAll
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+#Stop recording: 9/20/2024 21:44:42

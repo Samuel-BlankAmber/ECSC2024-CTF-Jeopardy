@@ -1,0 +1,60 @@
+{
+  "enabled": true,
+  "services": {
+    "nginx": {
+      "build": "src/nginx",
+      "environment": {
+        "PASSWORD": "94e063341898358843c363ede5bbaa58",
+        "NGINX_ENVSUBST_OUTPUT_DIR": "/etc/nginx",
+        "API_HOST": "{{ .services.api.hostname }}:3000",
+        "PAYWALL_HOST": "{{ .services.paywall.hostname }}:3000",
+        "REPORTER_HOST": "{{ .services.reporter.hostname }}:3000"
+      },
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/nginx/nginx.conf",
+          "container": "/etc/nginx/templates/nginx.conf.template",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/secret-manager/build",
+          "container": "/var/www",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "secretmanager.xyz"
+        }
+      ],
+      "depends-on": [
+        "paywall",
+        "api",
+        "reporter"
+      ]
+    },
+    "paywall": {
+      "build": "src/paywall",
+      "environment": {
+        "PASSWORD": "94e063341898358843c363ede5bbaa58"
+      }
+    },
+    "reporter": {
+      "build": "src/reporter",
+      "headless": true,
+      "environment": {
+        "PASSWORD": "94e063341898358843c363ede5bbaa58",
+        "CHALL_URL": "https://secretmanager.xyz",
+        "FLAG": "ECSC{d1d_u_man4ge_t0_p4y?!_%s}"
+      }
+    },
+    "api": {
+      "build": "src/api"
+    }
+  }
+}

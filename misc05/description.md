@@ -1,0 +1,3 @@
+ACME Company has been alerted that a threat actor is selling the credentials of one of its users (pwned_user@acme.org) on a dark web forum. To identify the affected service and prevent further compromise, they need to determine which credential was leaked and how it was exfiltrated.  
+
+Unfortunately, the user’s workstation has been formatted, leaving only Sysmon logs collected by the SIEM for analysis. Can you help identify the stolen credential?

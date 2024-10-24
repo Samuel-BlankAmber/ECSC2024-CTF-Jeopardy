@@ -1,0 +1,1 @@
+^ECSC\{y3t_an0th3r_C_pr0gr4m_w1th_1d10t_vulns_[a-z0-9]{8}\}$

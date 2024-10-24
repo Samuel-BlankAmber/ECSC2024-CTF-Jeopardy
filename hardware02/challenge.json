@@ -1,0 +1,36 @@
+{
+  "title": "State Machine",
+  "description": "We have this FPGA programmed with a finite state machine (FSM), it was outsourced, we lost the documentation and we think the contractor installed a backdoor in order to get the FLAG.\n\nRead the attached file and the documentation in the `UART to I2C` challenge.",
+  "authors": [
+    "Giovanni Minotti <@Giotino>"
+  ],
+  "tags": [
+    "hardware"
+  ],
+  "hiddenTags": [],
+  "order": 23,
+  "flags": [
+    "^ECSC\\{3xpl0r3_th3_gr4ph\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "3.FSM.md",
+      "type": "upload",
+      "path": "./attachments/3.FSM.md",
+      "dynamic": false
+    },
+    {
+      "name": "FSM.png",
+      "type": "upload",
+      "path": "./attachments/FSM.png",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

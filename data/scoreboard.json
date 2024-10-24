@@ -1,0 +1,1870 @@
+{
+    "scoreboard": [
+        {
+            "id": 61,
+            "guest": false,
+            "team": "Team Germany",
+            "affiliationName": "Official Teams",
+            "score": 2786,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728462933917
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728480263089
+                },
+                "27": {
+                    "firstBlood": true,
+                    "score": 419,
+                    "timestamp": 1728475881006
+                },
+                "29": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728486327295
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728465931585
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728468579877
+                },
+                "39": {
+                    "firstBlood": false,
+                    "score": 272,
+                    "timestamp": 1728475841807
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728478367919
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728470628238
+                },
+                "47": {
+                    "firstBlood": true,
+                    "score": 76,
+                    "timestamp": 1728462688401
+                },
+                "48": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728487463833
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728485226235
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728466929220
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728476730198
+                }
+            }
+        },
+        {
+            "id": 66,
+            "guest": false,
+            "team": "Team Italy",
+            "affiliationName": "Official Teams",
+            "score": 2472,
+            "solves": {
+                "25": {
+                    "firstBlood": true,
+                    "score": 59,
+                    "timestamp": 1728462903238
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728471211740
+                },
+                "27": {
+                    "firstBlood": false,
+                    "score": 419,
+                    "timestamp": 1728482871695
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728480474526
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728488931104
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728483697991
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728481812532
+                },
+                "39": {
+                    "firstBlood": false,
+                    "score": 272,
+                    "timestamp": 1728487346067
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728473849035
+                },
+                "41": {
+                    "firstBlood": true,
+                    "score": 176,
+                    "timestamp": 1728471720198
+                },
+                "42": {
+                    "firstBlood": false,
+                    "score": 419,
+                    "timestamp": 1728485461027
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475855157
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471172293
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728464545192
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728467524940
+                }
+            }
+        },
+        {
+            "id": 73,
+            "guest": false,
+            "team": "Team Poland",
+            "affiliationName": "Official Teams",
+            "score": 2393,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728471369599
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728465773769
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728483443040
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728474900138
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728482271533
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728473002443
+                },
+                "39": {
+                    "firstBlood": true,
+                    "score": 272,
+                    "timestamp": 1728475166648
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728485755539
+                },
+                "44": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728478391329
+                },
+                "46": {
+                    "firstBlood": true,
+                    "score": 76,
+                    "timestamp": 1728466250455
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728469912764
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728485101658
+                },
+                "50": {
+                    "firstBlood": true,
+                    "score": 62,
+                    "timestamp": 1728461633368
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728481872127
+                },
+                "53": {
+                    "firstBlood": false,
+                    "score": 419,
+                    "timestamp": 1728477800071
+                }
+            }
+        },
+        {
+            "id": 57,
+            "guest": false,
+            "team": "Team Denmark",
+            "affiliationName": "Official Teams",
+            "score": 1960,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466804003
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728470616323
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728478755413
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728472332588
+                },
+                "33": {
+                    "firstBlood": false,
+                    "score": 500,
+                    "timestamp": 1728487640646
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728474091243
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728463813768
+                },
+                "39": {
+                    "firstBlood": false,
+                    "score": 272,
+                    "timestamp": 1728489360402
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728474457717
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728473826618
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728485843237
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728462669244
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728467039683
+                }
+            }
+        },
+        {
+            "id": 48,
+            "guest": true,
+            "team": "Team Australia",
+            "affiliationName": "Guest Teams",
+            "score": 1789,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728471361364
+                },
+                "30": {
+                    "firstBlood": true,
+                    "score": 76,
+                    "timestamp": 1728462479180
+                },
+                "31": {
+                    "firstBlood": true,
+                    "score": 176,
+                    "timestamp": 1728468284593
+                },
+                "32": {
+                    "firstBlood": true,
+                    "score": 96,
+                    "timestamp": 1728464400425
+                },
+                "33": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728479054911
+                },
+                "36": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728488756036
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728485719340
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728466708434
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728473042199
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728477238217
+                }
+            }
+        },
+        {
+            "id": 80,
+            "guest": false,
+            "team": "Team Spain",
+            "affiliationName": "Official Teams",
+            "score": 1759,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728468093298
+                },
+                "34": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728485598765
+                },
+                "35": {
+                    "firstBlood": true,
+                    "score": 96,
+                    "timestamp": 1728462617322
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728465740173
+                },
+                "40": {
+                    "firstBlood": true,
+                    "score": 241,
+                    "timestamp": 1728464913293
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728486540654
+                },
+                "42": {
+                    "firstBlood": true,
+                    "score": 419,
+                    "timestamp": 1728477937836
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728488903538
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728466004469
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728477188113
+                }
+            }
+        },
+        {
+            "id": 59,
+            "guest": false,
+            "team": "Team Finland",
+            "affiliationName": "Official Teams",
+            "score": 1726,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728477419674
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728474899587
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728478033702
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728467780755
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728489207661
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728463948913
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728482118634
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728485717665
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463379316
+                },
+                "51": {
+                    "firstBlood": false,
+                    "score": 357,
+                    "timestamp": 1728484392031
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728468588313
+                },
+                "53": {
+                    "firstBlood": true,
+                    "score": 419,
+                    "timestamp": 1728472773365
+                }
+            }
+        },
+        {
+            "id": 75,
+            "guest": false,
+            "team": "Team Romania",
+            "affiliationName": "Official Teams",
+            "score": 1559,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466528578
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728468620146
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728482050488
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728476312707
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728474085727
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728486017334
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728469053360
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475098348
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728468036170
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728481110449
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463993488
+                },
+                "51": {
+                    "firstBlood": false,
+                    "score": 357,
+                    "timestamp": 1728489134744
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728469997866
+                }
+            }
+        },
+        {
+            "id": 49,
+            "guest": false,
+            "team": "Team Austria",
+            "affiliationName": "Official Teams",
+            "score": 1536,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728468423530
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728465240783
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728477538214
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728467738198
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728488706983
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728470514632
+                },
+                "39": {
+                    "firstBlood": false,
+                    "score": 272,
+                    "timestamp": 1728480996571
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728465868268
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728480328428
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728476642442
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728476463975
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728483016498
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728484342609
+                }
+            }
+        },
+        {
+            "id": 52,
+            "guest": true,
+            "team": "Team Canada",
+            "affiliationName": "Guest Teams",
+            "score": 1416,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728464962881
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728475466403
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728463469594
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728479926181
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728474842421
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471892321
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728464974610
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728469329865
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728482374342
+                },
+                "53": {
+                    "firstBlood": false,
+                    "score": 419,
+                    "timestamp": 1728476059988
+                }
+            }
+        },
+        {
+            "id": 56,
+            "guest": false,
+            "team": "Team Czech Republic",
+            "affiliationName": "Official Teams",
+            "score": 1202,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728467943158
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728474652014
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728468711945
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728478810877
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728477578101
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728485727407
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728469571172
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728470512650
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475283269
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728467335621
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728473277027
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728477404487
+                }
+            }
+        },
+        {
+            "id": 83,
+            "guest": true,
+            "team": "Team United States",
+            "affiliationName": "Guest Teams",
+            "score": 1186,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728477681086
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728479384118
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728478213504
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728464809171
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728467838630
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728485008689
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475368363
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728463396796
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728477014562
+                },
+                "53": {
+                    "firstBlood": false,
+                    "score": 419,
+                    "timestamp": 1728477195978
+                }
+            }
+        },
+        {
+            "id": 71,
+            "guest": false,
+            "team": "Team Netherlands",
+            "affiliationName": "Official Teams",
+            "score": 1171,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728483840234
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728483862358
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728483875242
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728483880682
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728483892477
+                },
+                "40": {
+                    "firstBlood": false,
+                    "score": 241,
+                    "timestamp": 1728483897909
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728484386355
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728483904696
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728484443828
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728484073885
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728484069545
+                }
+            }
+        },
+        {
+            "id": 60,
+            "guest": false,
+            "team": "Team France",
+            "affiliationName": "Official Teams",
+            "score": 1131,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466356251
+                },
+                "26": {
+                    "firstBlood": true,
+                    "score": 194,
+                    "timestamp": 1728468481302
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728466463684
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728474788121
+                },
+                "45": {
+                    "firstBlood": true,
+                    "score": 500,
+                    "timestamp": 1728489232566
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728489448410
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471620828
+                }
+            }
+        },
+        {
+            "id": 81,
+            "guest": false,
+            "team": "Team Sweden",
+            "affiliationName": "Official Teams",
+            "score": 1106,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728464749188
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728483291112
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728476411310
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728469759264
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728483250153
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728486438441
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728468329104
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728463190358
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728464714372
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463086781
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728487014606
+                }
+            }
+        },
+        {
+            "id": 82,
+            "guest": false,
+            "team": "Team Switzerland",
+            "affiliationName": "Official Teams",
+            "score": 1106,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728464282935
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728466556667
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728478786397
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728477858435
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728489038953
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728462466489
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728474519787
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728469803357
+                },
+                "49": {
+                    "firstBlood": true,
+                    "score": 161,
+                    "timestamp": 1728464270190
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728461805663
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728473305761
+                }
+            }
+        },
+        {
+            "id": 55,
+            "guest": false,
+            "team": "Team Cyprus",
+            "affiliationName": "Official Teams",
+            "score": 961,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728470138088
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728468372730
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728476355822
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728468179482
+                },
+                "37": {
+                    "firstBlood": true,
+                    "score": 194,
+                    "timestamp": 1728468610050
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728463608546
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728479029425
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728485856873
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728488030121
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728475021144
+                }
+            }
+        },
+        {
+            "id": 50,
+            "guest": false,
+            "team": "Team Belgium",
+            "affiliationName": "Official Teams",
+            "score": 789,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728480529794
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728483162786
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728487699958
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728477347801
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728479466663
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728465831258
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728478516098
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728467757533
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728480098614
+                }
+            }
+        },
+        {
+            "id": 76,
+            "guest": false,
+            "team": "Team Serbia",
+            "affiliationName": "Official Teams",
+            "score": 771,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728467629156
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728478858493
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728472520825
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728481944041
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728465395781
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728481455048
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728486417751
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728465293412
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728481286584
+                }
+            }
+        },
+        {
+            "id": 58,
+            "guest": false,
+            "team": "Team Estonia",
+            "affiliationName": "Official Teams",
+            "score": 752,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728468270268
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728466831453
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728485900349
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728478958106
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728472447503
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728470618842
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728473119620
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728466407611
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728475114527
+                }
+            }
+        },
+        {
+            "id": 78,
+            "guest": false,
+            "team": "Team Slovakia",
+            "affiliationName": "Official Teams",
+            "score": 717,
+            "solves": {
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475622485
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728469739149
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728468913194
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728477645712
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728472645223
+                },
+                "51": {
+                    "firstBlood": true,
+                    "score": 357,
+                    "timestamp": 1728483777685
+                }
+            }
+        },
+        {
+            "id": 51,
+            "guest": false,
+            "team": "Team Bulgaria",
+            "affiliationName": "Official Teams",
+            "score": 693,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466555425
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728482672233
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728477328033
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728475834012
+                },
+                "38": {
+                    "firstBlood": true,
+                    "score": 50,
+                    "timestamp": 1728462194844
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728474558546
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728465762159
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728473980404
+                }
+            }
+        },
+        {
+            "id": 64,
+            "guest": false,
+            "team": "Team Iceland",
+            "affiliationName": "Official Teams",
+            "score": 693,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466500782
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728476004071
+                },
+                "37": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728486709426
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728465746398
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728478372203
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728469937314
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728472125018
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728477806350
+                }
+            }
+        },
+        {
+            "id": 72,
+            "guest": false,
+            "team": "Team Norway",
+            "affiliationName": "Official Teams",
+            "score": 599,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728470126163
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728482117509
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728471350089
+                },
+                "41": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728486235558
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728487777021
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463020823
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728479180073
+                }
+            }
+        },
+        {
+            "id": 70,
+            "guest": false,
+            "team": "Team Luxembourg",
+            "affiliationName": "Official Teams",
+            "score": 595,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728466490094
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728465074943
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728479589428
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728466218552
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728467322395
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728488401600
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728473390337
+                }
+            }
+        },
+        {
+            "id": 74,
+            "guest": false,
+            "team": "Team Portugal",
+            "affiliationName": "Official Teams",
+            "score": 521,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728467030015
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728469000837
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728474777121
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728477142164
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463108996
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728479807925
+                }
+            }
+        },
+        {
+            "id": 65,
+            "guest": false,
+            "team": "Team Ireland",
+            "affiliationName": "Official Teams",
+            "score": 519,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728470156835
+                },
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728479388700
+                },
+                "31": {
+                    "firstBlood": false,
+                    "score": 176,
+                    "timestamp": 1728488489919
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728480159246
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728464344683
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728466789742
+                }
+            }
+        },
+        {
+            "id": 62,
+            "guest": false,
+            "team": "Team Greece",
+            "affiliationName": "Official Teams",
+            "score": 441,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728464503844
+                },
+                "26": {
+                    "firstBlood": false,
+                    "score": 194,
+                    "timestamp": 1728487557244
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728473214259
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471175267
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728463779496
+                }
+            }
+        },
+        {
+            "id": 63,
+            "guest": false,
+            "team": "Team Hungary",
+            "affiliationName": "Official Teams",
+            "score": 437,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728463806848
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728477288546
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728464162183
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728480049350
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728480409617
+                },
+                "52": {
+                    "firstBlood": true,
+                    "score": 80,
+                    "timestamp": 1728466258504
+                }
+            }
+        },
+        {
+            "id": 79,
+            "guest": false,
+            "team": "Team Slovenia",
+            "affiliationName": "Official Teams",
+            "score": 408,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728467815013
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728472453408
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728477952692
+                },
+                "49": {
+                    "firstBlood": false,
+                    "score": 161,
+                    "timestamp": 1728482856900
+                },
+                "50": {
+                    "firstBlood": false,
+                    "score": 62,
+                    "timestamp": 1728467765224
+                }
+            }
+        },
+        {
+            "id": 77,
+            "guest": true,
+            "team": "Team Singapore",
+            "affiliationName": "Guest Teams",
+            "score": 361,
+            "solves": {
+                "25": {
+                    "firstBlood": false,
+                    "score": 59,
+                    "timestamp": 1728487657592
+                },
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728481016571
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728463356178
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471046567
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728473980385
+                }
+            }
+        },
+        {
+            "id": 54,
+            "guest": false,
+            "team": "Team Croatia",
+            "affiliationName": "Official Teams",
+            "score": 358,
+            "solves": {
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728475495661
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728466895518
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728476435829
+                },
+                "47": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728471109658
+                },
+                "52": {
+                    "firstBlood": false,
+                    "score": 80,
+                    "timestamp": 1728471759840
+                }
+            }
+        },
+        {
+            "id": 68,
+            "guest": false,
+            "team": "Team Latvia",
+            "affiliationName": "Official Teams",
+            "score": 298,
+            "solves": {
+                "30": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728476316453
+                },
+                "32": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728482727211
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728467330919
+                },
+                "46": {
+                    "firstBlood": false,
+                    "score": 76,
+                    "timestamp": 1728478757921
+                }
+            }
+        },
+        {
+            "id": 53,
+            "guest": true,
+            "team": "Team Costa Rica",
+            "affiliationName": "Guest Teams",
+            "score": 146,
+            "solves": {
+                "35": {
+                    "firstBlood": false,
+                    "score": 96,
+                    "timestamp": 1728472822777
+                },
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728483247068
+                }
+            }
+        },
+        {
+            "id": 69,
+            "guest": false,
+            "team": "Team Liechtenstein",
+            "affiliationName": "Official Teams",
+            "score": 50,
+            "solves": {
+                "38": {
+                    "firstBlood": false,
+                    "score": 50,
+                    "timestamp": 1728474906354
+                }
+            }
+        },
+        {
+            "id": 47,
+            "guest": false,
+            "team": "Team Albania",
+            "affiliationName": "Official Teams",
+            "score": 0,
+            "solves": {}
+        },
+        {
+            "id": 67,
+            "guest": true,
+            "team": "Team Kosovo",
+            "affiliationName": "Guest Teams",
+            "score": 0,
+            "solves": {}
+        }
+    ],
+    "gameFreeze": {
+        "frozen": false,
+        "freezeTime": null
+    },
+    "gamePause": {
+        "paused": true,
+        "reason": "after-end",
+        "start": "2024-10-09T08:00:00.000Z",
+        "end": "2024-10-09T16:00:00.000Z"
+    }
+}

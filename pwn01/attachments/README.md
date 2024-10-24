@@ -1,0 +1,1 @@
+> The debugging instructions provided through the attachments during the CTF do not properly work with the Docker jail setup. They have been left in the attachment just to keep it exactly as it was shipped during the competition.

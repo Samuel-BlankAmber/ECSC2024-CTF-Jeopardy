@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Sep 25 22:29:03 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     FSM_CHALL
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets CLK_c]
+            39 items scored, 3 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.523ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             state_FSM_i11  (from CLK_c +)
+   Destination:    FD1S3AX    D              state_FSM_i14  (to CLK_c +)
+
+   Delay:                   5.377ns  (32.5% logic, 67.5% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.377ns data_path state_FSM_i11 to state_FSM_i14 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 0.523ns
+
+ Path Details: state_FSM_i11 to state_FSM_i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              state_FSM_i11 (from CLK_c)
+Route         6   e 1.266                                  n391
+LUT4        ---     0.448              C to Z              i1_2_lut_rep_26_3_lut
+Route         1   e 0.788                                  n1102
+LUT4        ---     0.448              C to Z              i1_4_lut_adj_8
+Route         1   e 0.788                                  n4_adj_2
+LUT4        ---     0.448              D to Z              i2_3_lut_4_lut
+Route         1   e 0.788                                  n911
+                  --------
+                    5.377  (32.5% logic, 67.5% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.425ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             state_FSM_i9  (from CLK_c +)
+   Destination:    FD1S3AX    D              state_FSM_i6  (to CLK_c +)
+
+   Delay:                   5.279ns  (33.1% logic, 66.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.279ns data_path state_FSM_i9 to state_FSM_i6 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 0.425ns
+
+ Path Details: state_FSM_i9 to state_FSM_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              state_FSM_i9 (from CLK_c)
+Route         4   e 1.168                                  n393
+LUT4        ---     0.448              D to Z              i21_4_lut_adj_2
+Route         1   e 0.788                                  n8
+LUT4        ---     0.448              C to Z              i2_3_lut
+Route         1   e 0.788                                  n896
+LUT4        ---     0.448              B to Z              i2_4_lut_adj_1
+Route         1   e 0.788                                  n899
+                  --------
+                    5.279  (33.1% logic, 66.9% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.356ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             state_FSM_i3  (from CLK_c +)
+   Destination:    FD1S3AX    D              state_FSM_i6  (to CLK_c +)
+
+   Delay:                   5.210ns  (33.5% logic, 66.5% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.210ns data_path state_FSM_i3 to state_FSM_i6 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 0.356ns
+
+ Path Details: state_FSM_i3 to state_FSM_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              state_FSM_i3 (from CLK_c)
+Route         3   e 1.099                                  n399
+LUT4        ---     0.448              A to Z              i21_4_lut_adj_2
+Route         1   e 0.788                                  n8
+LUT4        ---     0.448              C to Z              i2_3_lut
+Route         1   e 0.788                                  n896
+LUT4        ---     0.448              B to Z              i2_4_lut_adj_1
+Route         1   e 0.788                                  n899
+                  --------
+                    5.210  (33.5% logic, 66.5% route), 4 logic levels.
+
+Warning: 5.523 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLK_c]                   |     5.000 ns|     5.523 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n8                                      |       1|       2|     66.67%
+                                        |        |        |
+n896                                    |       1|       2|     66.67%
+                                        |        |        |
+n899                                    |       1|       2|     66.67%
+                                        |        |        |
+n4_adj_2                                |       1|       1|     33.33%
+                                        |        |        |
+n391                                    |       6|       1|     33.33%
+                                        |        |        |
+n393                                    |       4|       1|     33.33%
+                                        |        |        |
+n399                                    |       3|       1|     33.33%
+                                        |        |        |
+n911                                    |       1|       1|     33.33%
+                                        |        |        |
+n1102                                   |       1|       1|     33.33%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 3  Score: 1304
+
+Constraints cover  39 paths, 44 nets, and 84 connections (31.0% coverage)
+
+
+Peak memory: 80875520 bytes, TRCE: 1282048 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

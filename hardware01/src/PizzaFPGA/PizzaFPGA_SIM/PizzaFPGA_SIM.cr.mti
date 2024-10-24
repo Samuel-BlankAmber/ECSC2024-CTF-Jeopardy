@@ -1,0 +1,46 @@
+F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/TOP_ENTITY.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/TOP_ENTITY.vhd
+Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TOP_ENTITY
+-- Compiling architecture STRUCTURAL of TOP_ENTITY
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading entity FSM_CHALL
+-- Loading entity PRINT_FLAG
+
+} {} {}} F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FSM_CHALL.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FSM_CHALL.vhd
+Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity FSM_CHALL
+-- Compiling architecture BEHAVIORAL of FSM_CHALL
+
+} {} {}} F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FPGA_testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FPGA_testbench.vhd
+Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FPGA_testbench
+-- Compiling architecture test of FPGA_testbench
+-- Loading entity TOP_ENTITY
+
+} {} {}} F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/PRINT_FLAG.vhd {1 {vcom -work work -2002 -explicit -stats=none F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/PRINT_FLAG.vhd
+Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity PRINT_FLAG
+-- Compiling architecture BEHAVIORAL of PRINT_FLAG
+
+} {} {}}

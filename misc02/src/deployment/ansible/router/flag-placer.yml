@@ -1,0 +1,29 @@
+---
+- name: Setup flag-placer
+  hosts: all
+  become: yes
+  tasks:
+    - name: Copy flag-placer directory
+      copy:
+        src: flag-placer
+        dest: /root
+        force: yes
+
+    - name: Install necessary Python packages
+      pip:
+        requirements: /root/flag-placer/requirements.txt
+        state: present
+        break_system_packages: true
+
+    - name: Make flag-placer.py executable
+      file:
+        path: /root/flag-placer/flag-placer.py
+        mode: 0755
+
+    - name: Make cron job for flag placer
+      cron:
+        name: "Flag placer"
+        minute: "*/1"
+        job: "/root/flag-placer/flag-placer.py"
+        user: root
+        state: present

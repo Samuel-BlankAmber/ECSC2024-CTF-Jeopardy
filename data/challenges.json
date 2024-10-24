@@ -1,0 +1,416 @@
+{
+    "gameFreeze": {
+        "frozen": false,
+        "freezeTime": null
+    },
+    "gamePause": {
+        "paused": true,
+        "reason": "after-end",
+        "start": "2024-10-09T08:00:00.000Z",
+        "end": "2024-10-09T16:00:00.000Z"
+    },
+    "events": [
+        {
+            "id": 2,
+            "name": "ECSC2024",
+            "sections": [
+                {
+                    "id": 2,
+                    "name": "crypto",
+                    "challenges": [
+                        {
+                            "id": 25,
+                            "title": "OffTopic",
+                            "tags": [
+                                "crypto"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 59,
+                            "currentGlobalSolves": 30,
+                            "hidden": false
+                        },
+                        {
+                            "id": 26,
+                            "title": "RSATogether",
+                            "tags": [
+                                "crypto"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 194,
+                            "currentGlobalSolves": 8,
+                            "hidden": false
+                        },
+                        {
+                            "id": 27,
+                            "title": "Smithing contest",
+                            "tags": [
+                                "crypto"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 419,
+                            "currentGlobalSolves": 2,
+                            "hidden": false
+                        },
+                        {
+                            "id": 28,
+                            "title": "One Round Crypto",
+                            "tags": [
+                                "crypto"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 0,
+                            "hidden": false
+                        },
+                        {
+                            "id": 29,
+                            "title": "Quo vadis?",
+                            "tags": [
+                                "crypto"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "hardware",
+                    "challenges": [
+                        {
+                            "id": 30,
+                            "title": "UART to I2C",
+                            "tags": [
+                                "hardware"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 76,
+                            "currentGlobalSolves": 23,
+                            "hidden": false
+                        },
+                        {
+                            "id": 32,
+                            "title": "Secure PIN",
+                            "tags": [
+                                "hardware"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 96,
+                            "currentGlobalSolves": 19,
+                            "hidden": false
+                        },
+                        {
+                            "id": 31,
+                            "title": "State Machine",
+                            "tags": [
+                                "hardware"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 176,
+                            "currentGlobalSolves": 10,
+                            "hidden": false
+                        },
+                        {
+                            "id": 33,
+                            "title": "Slot Machine",
+                            "tags": [
+                                "hardware"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 2,
+                            "hidden": false
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "misc",
+                    "challenges": [
+                        {
+                            "id": 38,
+                            "title": "Beaconing",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 50,
+                            "currentGlobalSolves": 35,
+                            "hidden": false
+                        },
+                        {
+                            "id": 37,
+                            "title": "Good old days",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 194,
+                            "currentGlobalSolves": 9,
+                            "hidden": false
+                        },
+                        {
+                            "id": 34,
+                            "title": "JAWS",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        },
+                        {
+                            "id": 36,
+                            "title": "Jailguesser",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        },
+                        {
+                            "id": 39,
+                            "title": "Intent Bakery",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 272,
+                            "currentGlobalSolves": 5,
+                            "hidden": false
+                        },
+                        {
+                            "id": 35,
+                            "title": "Trust Issues",
+                            "tags": [
+                                "misc"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 96,
+                            "currentGlobalSolves": 21,
+                            "hidden": false
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "pwn",
+                    "challenges": [
+                        {
+                            "id": 40,
+                            "title": "Yap",
+                            "tags": [
+                                "pwn"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 241,
+                            "currentGlobalSolves": 7,
+                            "hidden": false
+                        },
+                        {
+                            "id": 41,
+                            "title": "Secret Keeper",
+                            "tags": [
+                                "pwn"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 176,
+                            "currentGlobalSolves": 11,
+                            "hidden": false
+                        },
+                        {
+                            "id": 42,
+                            "title": "Bdecoder",
+                            "tags": [
+                                "pwn"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 419,
+                            "currentGlobalSolves": 2,
+                            "hidden": false
+                        },
+                        {
+                            "id": 43,
+                            "title": "TopCPU",
+                            "tags": [
+                                "pwn"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 0,
+                            "hidden": false
+                        },
+                        {
+                            "id": 44,
+                            "title": "Baby VMA",
+                            "tags": [
+                                "pwn"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "rev",
+                    "challenges": [
+                        {
+                            "id": 47,
+                            "title": "battleship",
+                            "tags": [
+                                "rev"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 76,
+                            "currentGlobalSolves": 24,
+                            "hidden": false
+                        },
+                        {
+                            "id": 46,
+                            "title": "printer",
+                            "tags": [
+                                "rev"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 76,
+                            "currentGlobalSolves": 24,
+                            "hidden": false
+                        },
+                        {
+                            "id": 49,
+                            "title": "~&",
+                            "tags": [
+                                "rev"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 161,
+                            "currentGlobalSolves": 11,
+                            "hidden": false
+                        },
+                        {
+                            "id": 45,
+                            "title": "Old Gen Crackme",
+                            "tags": [
+                                "rev"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        },
+                        {
+                            "id": 48,
+                            "title": "Next Gen Crackme",
+                            "tags": [
+                                "rev"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 1,
+                            "hidden": false
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "web",
+                    "challenges": [
+                        {
+                            "id": 52,
+                            "title": "KarmaVault",
+                            "tags": [
+                                "web"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 80,
+                            "currentGlobalSolves": 21,
+                            "hidden": false
+                        },
+                        {
+                            "id": 50,
+                            "title": "Ticket champions",
+                            "tags": [
+                                "web"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 62,
+                            "currentGlobalSolves": 28,
+                            "hidden": false
+                        },
+                        {
+                            "id": 51,
+                            "title": "phpMySecureAdmin",
+                            "tags": [
+                                "web"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 357,
+                            "currentGlobalSolves": 3,
+                            "hidden": false
+                        },
+                        {
+                            "id": 53,
+                            "title": "SecretManager",
+                            "tags": [
+                                "web"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 419,
+                            "currentGlobalSolves": 4,
+                            "hidden": false
+                        },
+                        {
+                            "id": 54,
+                            "title": "A Fever Dream",
+                            "tags": [
+                                "web"
+                            ],
+                            "hiddenTags": [],
+                            "authors": [],
+                            "currentScore": 500,
+                            "currentGlobalSolves": 0,
+                            "hidden": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

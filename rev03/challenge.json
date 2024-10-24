@@ -1,0 +1,41 @@
+{
+  "title": "battleship",
+  "description": "I like so much this game, but winning seems impossible... only holes in the water!\n\n_The timeout on the remote is 30 seconds._\n\n`nc battleship.challs.jeopardy.ecsc2024.it 47016`",
+  "authors": [
+    "Andrea Raineri <@Rising>"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "order": 51,
+  "flags": [
+    "^ECSC\\{th1s_g4m3_w4s_n0t_s0_1mp0ss1bl3_r1ght\\?_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "battleship",
+      "type": "upload",
+      "path": "./attachments/battleship",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "battleship.challs.jeopardy.ecsc2024.it",
+    "port": 47016
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 30
+    }
+  }
+}

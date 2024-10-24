@@ -1,0 +1,17 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+FREQUENCY 60.000000 MHz;
+IOBUF ALLPORTS IO_TYPE=LVCMOS33;
+
+LOCATE COMP "fpga_gpio_o[0]" SITE "PR17D";
+LOCATE COMP "fpga_gpio_o[1]" SITE "PR17C";
+LOCATE COMP "fpga_gpio_o[2]" SITE "PR16D";
+LOCATE COMP "fpga_gpio_o[3]" SITE "PR16C";
+
+LOCATE COMP "fpga_gpio_i[0]" SITE "PR19B";
+LOCATE COMP "fpga_gpio_i[1]" SITE "PR19A";
+LOCATE COMP "fpga_gpio_i[2]" SITE "PR18D";
+LOCATE COMP "fpga_gpio_i[3]" SITE "PR18C";
+
+LOCATE COMP "fpga_gpio_rst" SITE "PR19C";
+LOCATE COMP "fpga_gpio_clock" SITE "PR19D";

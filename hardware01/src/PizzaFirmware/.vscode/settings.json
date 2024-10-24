@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "usart.h": "c",
+    "stdbool.h": "c",
+    "gpio.h": "c",
+    "stdlib.h": "c",
+    "rng.h": "c",
+    "utils.h": "c",
+    "serial.h": "c",
+    "tim.h": "c",
+    "config.h": "c",
+    "stm32f4xx_exti.h": "c",
+    "stm32f4xx.h": "c",
+    "stm32f4xx_syscfg.h": "c",
+    "misc.h": "c"
+  }
+}

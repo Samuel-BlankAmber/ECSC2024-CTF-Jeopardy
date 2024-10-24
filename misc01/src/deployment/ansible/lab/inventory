@@ -1,0 +1,18 @@
+[default]
+jaws dict_key=jaws ansible_host=10.151.1.100 ansible_user="{{credentials.target.username}}" ansible_password="{{credentials.target.password}}"
+jaws_dev dict_key=jaws_dev ansible_host=10.151.1.101 ansible_user="{{credentials.dev.username}}" ansible_password="{{credentials.dev.password}}"
+
+[all:vars]
+ansible_user=deploy
+ansible_password=******
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_operation_timeout_sec=400
+ansible_winrm_read_timeout_sec=500
+ansible_winrm_kerberos_delegation=true
+
+[target]
+jaws
+
+[dev]
+jaws_dev

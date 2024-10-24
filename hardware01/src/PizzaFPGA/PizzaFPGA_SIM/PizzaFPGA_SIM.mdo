@@ -1,0 +1,21 @@
+if {![file exists "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM/PizzaFPGA_SIM.mpf"]} { 
+	project new "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM" PizzaFPGA_SIM
+	project addfile "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/PRINT_FLAG.vhd"
+	project addfile "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FSM_CHALL.vhd"
+	project addfile "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/TOP_ENTITY.vhd"
+	project addfile "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FPGA_testbench.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/PRINT_FLAG.vhd"
+	vcom -work work "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FSM_CHALL.vhd"
+	vcom -work work "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/TOP_ENTITY.vhd"
+	vcom -work work "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FPGA_testbench.vhd"
+} else {
+	project open "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM/PizzaFPGA_SIM"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  FPGA_testbench
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,6 @@
+ROOT_DIR=$SCRIPTS_DIR/..
+CONFIG_DIR=$ROOT_DIR/config
+DEPLOYMENTS_DIR=$ROOT_DIR/deployments
+CHALLENGE_NAME=$(cat $CONFIG_DIR/challenge-name.txt)
+REGION=$(cat $CONFIG_DIR/region.txt)
+RG_PREFIX="rg-$CHALLENGE_NAME-lab-team"

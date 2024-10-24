@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "expose": [
+        {
+          "type": "tcp",
+          "host": 47011,
+          "container": 1337
+        }
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/run.py",
+          "container": "/home/user/chall",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/run.sh",
+          "container": "/home/user/run.sh",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/bzImage",
+          "container": "/home/user/bzImage",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/initramfs.cpio.gz",
+          "container": "/home/user/initramfs.cpio.gz",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/flag.img",
+          "container": "/home/user/flag.img",
+          "readonly": true
+        }
+      ],
+      "environment": {
+        "FLAG": "ECSC{gg_maybe_next_time_use_VM_IO_[random 8]}",
+        "FLAG_IN_ENV": "true",
+        "FORWARD_STDERR": "true",
+        "TIMEOUT": "60",
+        "TEMPDIRS": "/home/user/tmp",
+        "POW_BITS": "27",
+        "POW_BYPASS_HASH": "cbe6b75d4c67c9ba9ff6631ea8465460004f0af5"
+      }
+    }
+  }
+}

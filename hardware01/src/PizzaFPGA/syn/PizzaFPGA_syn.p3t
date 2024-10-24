@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "PizzaFPGA_syn.log"
+-o "PizzaFPGA_syn.csv"
+-pr "PizzaFPGA_syn.prf"

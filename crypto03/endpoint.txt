@@ -1,0 +1,1 @@
+tcp,smithing.challs.jeopardy.ecsc2024.it,47012

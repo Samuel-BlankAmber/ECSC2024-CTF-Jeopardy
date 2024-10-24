@@ -1,0 +1,11 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Cleanup
+  hosts: all
+  tasks:
+    - name: Clear event logs
+      ansible.windows.win_powershell:
+        script: |
+          Get-EventLog -List | ForEach-Object {Clear-EventLog -LogName $_.Log }

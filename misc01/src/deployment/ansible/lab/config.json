@@ -1,0 +1,24 @@
+{
+  "lab": {
+    "hosts": {
+      "jaws": {
+        "hostname": "jaws",
+        "user": {
+            "username": "user",
+            "password": "Passw0rd!"
+        }
+      },
+      "jaws_dev": {
+        "hostname": "dev-jaws",
+        "user": {
+            "username": "user",
+            "password": "Passw0rd!"
+        },
+        "admin": {
+            "username": "admin",
+            "password": "Passw0rd!"
+        }
+      }
+    }
+  }
+}

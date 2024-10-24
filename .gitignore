@@ -1,0 +1,8 @@
+/.idea
+/.vscode
+*.iml
+
+/teams/
+
+/inventory.yaml
+/inventory.ini

@@ -1,0 +1,23 @@
+#Start recording tcl command: 9/25/2024 21:44:52
+#Project Location: F:/Gits/Challenge-154/src/PizzaFPGA; Project name: PizzaFPGA
+prj_project open "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA.ldf"
+prj_src add "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/PRINT_FLAG.vhd" "F:/Gits/Challenge-154/src/PizzaFPGA/vhdl/FSM_CHALL.vhd"
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_src remove "F:/Gits/Challenge-154/src/PizzaFPGA/testbench/testbench.spf"
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Bitgen
+prj_run Export -impl syn -task TimingSimFileVHD
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task TimingSimFileVHD
+prj_run Export -impl syn -task TimingSimFileVHD
+prj_run Export -impl syn -task TimingSimFileVHD
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Bitgen
+#Stop recording: 9/25/2024 23:22:30

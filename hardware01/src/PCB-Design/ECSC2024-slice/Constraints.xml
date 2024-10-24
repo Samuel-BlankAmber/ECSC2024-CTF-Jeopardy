@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintsData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FlattenedNetName2ConstraintNetId>
+    <FlattenedNetName2ConstraintNetIdEntry FlattenedNetName="USB_P" ConstraintNetId="e61d0680-3503-488f-9ec3-ad33be164172" />
+    <FlattenedNetName2ConstraintNetIdEntry FlattenedNetName="USB_N" ConstraintNetId="aa2b503b-4ecc-4a4b-a7ed-d43fbd7bc834" />
+  </FlattenedNetName2ConstraintNetId>
+  <CNets>
+    <CNet Id="e61d0680-3503-488f-9ec3-ad33be164172">
+      <Constraints />
+      <ConstraintSets />
+      <ConstraintNodes />
+    </CNet>
+    <CNet Id="aa2b503b-4ecc-4a4b-a7ed-d43fbd7bc834">
+      <Constraints />
+      <ConstraintSets />
+      <ConstraintNodes />
+    </CNet>
+  </CNets>
+  <CNetClasses />
+  <CDifferentialPairs>
+    <CDifferentialPair Id="797c9a46-60e3-45f3-b5cb-c6f4f98fcef3" Name="USB">
+      <Constraints />
+      <ConstraintSets />
+      <PositiveConstraintNet Id="e61d0680-3503-488f-9ec3-ad33be164172" />
+      <NegativeConstraintNet Id="aa2b503b-4ecc-4a4b-a7ed-d43fbd7bc834" />
+    </CDifferentialPair>
+  </CDifferentialPairs>
+  <CDifferentialPairClasses />
+  <CPinPairs />
+  <CxSigClasses />
+  <CxNets />
+  <CXNetClasses />
+  <ConstraintClearancesMatrix>
+    <CCMFromScopes>
+      <CCMFromScope Id="0016603c-0dd5-431b-b623-9536b75b5318">
+        <ConstraintObject Id="00000000-0000-0000-0000-000000000000" />
+        <CCMToScopes>
+          <CCMToScope Id="ffa238fe-cb1f-4153-9b26-264f2c96ce57" SetId="00000000-0000-0000-0000-000000000000">
+            <ConstraintObject Id="00000000-0000-0000-0000-000000000000" />
+            <DefaultConstraintClearancesMatrixConstraint Id="00000000-0000-0000-0000-000000000000" Kind="0" Name="" Description="" Scope1="" Scope2="" Attributes="" LayerType="0" LayerId="0" />
+            <CCMConstraints />
+          </CCMToScope>
+        </CCMToScopes>
+      </CCMFromScope>
+    </CCMFromScopes>
+  </ConstraintClearancesMatrix>
+  <ConstraintSameNetClearancesMatrix>
+    <CCMFromScopes />
+  </ConstraintSameNetClearancesMatrix>
+  <CSets />
+  <CClearancesMatrixSets />
+</ConstraintsData>

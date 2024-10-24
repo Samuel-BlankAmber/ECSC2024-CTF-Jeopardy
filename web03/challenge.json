@@ -1,0 +1,40 @@
+{
+  "title": "KarmaVault",
+  "description": "KarmaVault is a new KV service, it was developed very fast by our\nprogrammers and our cybersecurity team assured us that the software is\nperfectly secure and ready to land in production.\n\n[https://karmavault.challs.jeopardy.ecsc2024.it](https://karmavault.challs.jeopardy.ecsc2024.it)",
+  "authors": [
+    "Vittorio Mignini <@M1gnus>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 61,
+  "flags": [
+    "^ECSC\\{NoW_y0U_g07_s0M3_N3G471Ve_K4rM4_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "KarmaVault.zip",
+      "type": "upload",
+      "path": "./attachments/KarmaVault.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://karmavault.challs.jeopardy.ecsc2024.it:443/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

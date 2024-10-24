@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/build/bdecoder",
+          "container": "/home/user/bdecoder",
+          "readonly": true
+        }
+      ],
+      "command": [
+        "/root/entry",
+        "/usr/bin/env",
+        "-i",
+        "PATH=/usr/local/bin:/usr/bin:/bin",
+        "qemu-aarch64",
+        "/home/user/bdecoder"
+      ],
+      "environment": {
+        "POW_BITS": "30",
+        "POW_BYPASS_HASH": "c03a53cf3ac725d8fa5d6e6af11a6f0d0c8116c6",
+        "FLAG": "ECSC{[random 8]_P4C_a1nt_g0t_n0th1ng_0n_u_o7_[random 8]}",
+        "FORWARD_STDERR": "true",
+        "TIMEOUT": "30"
+      },
+      "expose": [
+        {
+          "type": "tcp",
+          "host": 47006,
+          "container": 1337
+        }
+      ]
+    }
+  }
+}

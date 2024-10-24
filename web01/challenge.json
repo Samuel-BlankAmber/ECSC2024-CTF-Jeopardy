@@ -1,0 +1,33 @@
+{
+  "title": "Ticket champions",
+  "description": "I'm so hyped for the Linkin Park reunion that I'm waiting for the ticket to be available on the new Ticket champions shop!\n\nChallenge: [https://ticket.challs.jeopardy.ecsc2024.it](https://ticket.challs.jeopardy.ecsc2024.it)\n\nBot: [https://ticket-bot.challs.jeopardy.ecsc2024.it](https://ticket-bot.challs.jeopardy.ecsc2024.it)",
+  "authors": [
+    "Aleandro Prudenzano <@drw0if>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 62,
+  "flags": [
+    "^ECSC\\{ju57_4_51mpl3_c5p7\\+p4r4m373r_p0llu710n_n07h1n6_m0r3_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://ticket.challs.jeopardy.ecsc2024.it:443/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

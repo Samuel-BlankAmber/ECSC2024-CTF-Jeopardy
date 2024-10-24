@@ -1,0 +1,40 @@
+{
+  "title": "SecretManager",
+  "description": "We developed a new service, but we don't like bots...\n\n[https://secretmanager.xyz](https://secretmanager.xyz)",
+  "authors": [
+    "Stefano Alberto <@Xato>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 64,
+  "flags": [
+    "^ECSC\\{d1d_u_man4ge_t0_p4y\\?!_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "SecretManager.zip",
+      "type": "upload",
+      "path": "./attachments/SecretManager.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://secretmanager.xyz:443/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 300
+    }
+  }
+}

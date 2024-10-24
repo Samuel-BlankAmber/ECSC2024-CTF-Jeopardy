@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=ECSC2024\ECSC2024.PrjMbd
+[Project2]
+ProjectPath=ECSC2024-pizza\ECSC2024-pizza.PrjPcb
+[Project3]
+ProjectPath=ECSC2024-slice\ECSC2024-slice.PrjPcb

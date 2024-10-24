@@ -1,0 +1,370 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'TOP_ENTITY'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
+     PizzaFPGA_syn.ngd -o PizzaFPGA_syn_map.ncd -pr PizzaFPGA_syn.prf -mp
+     PizzaFPGA_syn.mrp -lpf
+     F:/Gits/Challenge-154/src/PizzaFPGA/syn/PizzaFPGA_syn.lpf -lpf
+     F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA.lpf -c 0 -gui -msgset
+     F:/Gits/Challenge-154/src/PizzaFPGA/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  10/05/24  21:18:12
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     77 out of  7209 (1%)
+      PFU registers:           77 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       129 out of  3432 (4%)
+      SLICEs as Logic/ROM:    129 out of  3432 (4%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         34 out of  3432 (1%)
+   Number of LUT4s:        240 out of  6864 (3%)
+      Number used as logic LUTs:        172
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       68
+      Number used as shift registers:     0
+   Number of PIO sites used: 0 + 4(JTAG) out of 115 (3%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net fpga_gpio_clock_c: 55 loads, 55 rising, 0 falling (Driver: PIO
+     fpga_gpio_clock )
+
+   Number of Clock Enables:  22
+     Net visit_complete: 1 loads, 1 LSLICEs
+     Net print_flag/fpga_gpio_clock_c_enable_8: 7 loads, 7 LSLICEs
+     Net print_flag/fpga_gpio_clock_c_enable_43: 3 loads, 3 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_1: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_22: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_41: 9 loads, 9 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_14: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_13: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_12: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_27: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_44: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_15: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_16: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_17: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_18: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_19: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_20: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_21: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_23: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_24: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_25: 1 loads, 1 LSLICEs
+     Net chall/fpga_gpio_clock_c_enable_26: 1 loads, 1 LSLICEs
+   Number of LSRs:  1
+     Net print_flag/n2246: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net fpga_gpio_i_c_3: 36 loads
+     Net fpga_gpio_i_c_0: 33 loads
+     Net fpga_gpio_i_c_2: 33 loads
+     Net fpga_gpio_i_c_1: 28 loads
+     Net visit_complete: 28 loads
+     Net chall/broken: 19 loads
+     Net chall/broken_N_43: 16 loads
+     Net print_flag/char_idx_3: 15 loads
+     Net print_flag/char_idx_2: 14 loads
+     Net print_flag/char_idx_1: 13 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
+
++---------------------+-----------+-----------+------------+
+| fpga_gpio_o[3]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_clock     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_rst       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_i[0]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_i[1]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_i[2]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_i[3]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_o[0]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_o[1]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fpga_gpio_o[2]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i2210 undriven or does not drive anything - clipped.
+Signal n495 was merged into signal fpga_gpio_rst_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_19/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_19/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_5/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_5/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_21/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_21/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_23/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_23/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_530_33/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_530_33/CO undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_25/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_25/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_7/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_7/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_27/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_27/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_29/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_29/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_31/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_31/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_33/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_33/CO undriven or does not drive anything - clipped.
+Signal print_flag/add_530_1/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_530_1/CI undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_9/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_9/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_1/S1 undriven or does not drive anything - clipped.
+
+Signal print_flag/add_1756_1/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_1/CI undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_11/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_11/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_13/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_13/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_15/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_15/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_17/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_17/S0 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_3/S1 undriven or does not drive anything - clipped.
+Signal print_flag/add_1756_3/S0 undriven or does not drive anything - clipped.
+Block print_flag/i441_1_lut was optimized away.
+Block i1 was optimized away.
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is
+        'fpga_gpio_rst_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'fpga_gpio_rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 7 
+
+     Type and instance name of component: 
+   Register : print_flag/current_char_i0
+   Register : print_flag/current_char_i1
+   Register : print_flag/current_char_i2
+   Register : print_flag/current_char_i3
+   Register : print_flag/current_char_i4
+   Register : print_flag/current_char_i5
+   Register : print_flag/current_char_i6
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'fpga_gpio_rst_c' via the
+
+     GSR component.
+
+     Type and number of components of the type: 
+   Register = 1 
+
+     Type and instance name of component: 
+   Register : print_flag/half_byte_i0_i3
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 60 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

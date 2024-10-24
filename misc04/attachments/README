@@ -1,0 +1,2 @@
+asterisk_team: this directory contains the configuration of the asterisk instance your phone is connected to.
+asterisk_pstn: this directory contains the configuration of the centralized asterisk, simulating the public service telephone network.

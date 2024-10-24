@@ -1,0 +1,41 @@
+{
+  "title": "Jailguesser",
+  "description": "Wanna play a guessing game?\n\n```sh\nnc jailguesser.challs.jeopardy.ecsc2024.it 47019\n```",
+  "authors": [
+    "Marco Bonelli <@mebeim>"
+  ],
+  "tags": [
+    "misc"
+  ],
+  "hiddenTags": [],
+  "order": 34,
+  "flags": [
+    "^ECSC{[0-9a-f]{8}_Certified_Pro_Guesser_B\\)_[0-9a-f]{8}}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "jailguesser.tar.gz",
+      "type": "upload",
+      "path": "./attachments/jailguesser.tar.gz",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "jailguesser.challs.jeopardy.ecsc2024.it",
+    "port": 47019
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 300
+    }
+  }
+}

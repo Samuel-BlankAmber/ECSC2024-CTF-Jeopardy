@@ -1,0 +1,50 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Copy solution and prepare health check
+  hosts: target
+  vars:
+    health: "{{credentials.health}}"
+    username: "{{health.username}}"
+    password: "{{health.password}}"
+  tasks:
+    - name: Create {{username}} user
+      win_user:
+        name: "{{username}}"
+        password: "{{password}}"
+        state: present
+        password_never_expires: yes
+        user_cannot_change_password: yes
+    
+    - name: Create health directory
+      win_file:
+        path: "C:\\health"
+        state: directory
+
+    - name: Set owner of health directory to {{username}}
+      win_owner:
+        path: "C:\\health"
+        user: "{{username}}"
+
+    - name: Allow {{username}} to read/execute health check
+      win_acl:
+        path: "C:\\health"
+        rights: "ListDirectory, Read, ReadAndExecute"
+        type: allow
+        user: "{{username}}"
+
+    - name: Copy solution
+      win_copy:
+        src: Solution.exe
+        dest: "C:\\health"
+
+    - name: Set owner of solution to {{username}}
+      win_owner:
+        path: "C:\\health\\Solution.exe"
+        user: "{{username}}"
+
+    - name: Remove inheritance from health directory
+      win_acl_inheritance:
+        path: "C:\\health"
+        state: absent

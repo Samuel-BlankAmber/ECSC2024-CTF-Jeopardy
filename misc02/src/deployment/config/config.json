@@ -1,0 +1,92 @@
+{
+    "sshKeys": {
+        "lab": {
+            "priv": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBcekjB60rtmkGayLoYYgkk9Sa0y5OFIDYmiSHVfyjrBgAAAIgBBtB4AQbQ\neAAAAAtzc2gtZWQyNTUxOQAAACBcekjB60rtmkGayLoYYgkk9Sa0y5OFIDYmiSHVfyjrBg\nAAAEBX+Ih7O1Wd7yxc3fOjDFl/tcOqaT3Oz8+dzoBZBRjPUVx6SMHrSu2aQZrIuhhiCST1\nJrTLk4UgNiaJIdV/KOsGAAAAA2xhYgEC\n-----END OPENSSH PRIVATE KEY-----",
+            "pub": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFx6SMHrSu2aQZrIuhhiCST1JrTLk4UgNiaJIdV/KOsG lab"
+        }
+    },
+    "wgKeys": {
+        "lab": {
+            "priv": "6HmQiEtvKYdfC0fwAANDeTBKSv7EX1nCJOYYWmRNaEI=",
+            "pub": "fuxwNA7v3VT/B+gp0LMuH3FZk2gLdUwNzshh3/QszRU="
+        },
+        "team": {
+            "priv": "+M0jMB7FwyXDOD/ru5KGbUnF2KrPsqovC6vk5xBNdXo=",
+            "pub": "ed9S6WZjlGb366xPa31ShVlXP19SynsCX7WUnOVsum0="
+        },
+        "icep": [
+            {
+                "priv": "gAw38g0ICkY18YaWmcgjXj1Yt4cU/4VHftEwE/EYzV4=",
+                "pub": "2J4KCmq99RsSCvfOSEgvzot7M+DANxPJ3u83UyJWrX0="
+            },
+            {
+                "priv": "8CAkIIMRfTme+qvVBI79g4LrqSTPwJPfqeXkTjWLNks=",
+                "pub": "yHCPcDUrIQbL5zcqk248MuyJU4RS/mblXnI8R2x0ejY="
+            },
+            {
+                "priv": "wGPC31qwEGTVobgbo8EKcf+KYzigH0EEGMjhUmDI/FM=",
+                "pub": "ePExc/gf9ouxJCFGcwyUh8cPmSXW7rb5lQl1EvV/+CI="
+            },
+            {
+                "priv": "YHc7Jcc6MnIWmz0XD3LjiKIewwiLNs5emh/+PKE8kXE=",
+                "pub": "mGW6DGU5w6E4XxQO5CjATLH04WuZBC7nsL1QQ6KwzEg="
+            },
+            {
+                "priv": "4JQddAlpIiVsI0gdAxAWDL5hGTryIg4/hXn1KkEkSUo=",
+                "pub": "sjvhQpQ1iaR9FlS9LBtUD7JVTiNoXl6oGzz6zIbccjY="
+            },
+            {
+                "priv": "wMcglGYoC5tntTsWb36+uki2KNyIAsW0S1aBonDqSkE=",
+                "pub": "NuHG0szQOAhzE/02IrudllWMLH3R/p8uzkbO9tAxpxM="
+            },
+            {
+                "priv": "4FhgObv3btoMzWCPNih0s0Z1J7mGZgdzmOujs5XK5Uc=",
+                "pub": "JTHMZOsXsENlSMkystTGfxOFNz68Y8PVihDbW/EjMwY="
+            },
+            {
+                "priv": "qLFQipG/TXBh5xbQbaEBu258d/JIlNiQmr1itB/V1kk=",
+                "pub": "3130Vw+fdthTnDPB6hXXbRFT5QRGp1KtKoJ8EAKMTiM="
+            },
+            {
+                "priv": "2JC5rEJzQchtJ3jfLNsuOPotO4LkM/jxr8TrcvExKHg=",
+                "pub": "uL0NIz68naMCCESkC0xpWtlGmbapjpd0A6EuYOIVeXk="
+            },
+            {
+                "priv": "cNBJbWK4TRnr+D42p/H/cUlgYB46RErK6Rq4kkcK7Vk=",
+                "pub": "xCki8fNIK2DjhVYEdIM1bLCKHOmBDu3wN0lxwv4pwRk="
+            }
+        ],
+        "icea": [
+            {
+                "priv": "GL+k434AxOutFwPe4KvhVnr4bbVtktnUNcyhfPhmP0s=",
+                "pub": "w1NC5UHUBqDFw/oEDBhtapIU2+YSOJvNzgAuHQT/mT8="
+            },
+            {
+                "priv": "OEIsCOtpCvxm5H5UgFcJITXq/YZEwu59hh8A9Dh2TWk=",
+                "pub": "fWC2yBWKN9i0JOdrTk5kHVBr+l7GpD5mzz053tyTtkU="
+            }
+        ]
+    },
+    "credentials": {
+        "dca": {
+            "username": "deploy",
+            "password": "2do2hYssbgs8TMTFMBLW9W1!"
+        },
+        "dcb": {
+            "username": "deploy",
+            "password": "XCBXo1ALyFcvkkpF99kp7G1!"
+        },
+        "pizza.local": {
+            "username": "Administrator",
+            "password": "DoughN0tFai1!"
+        },
+        "spaghetti.local": {
+            "username": "Administrator",
+            "password": "51ttoivesnPczNHu1RUVBJ1!"
+        }
+    },
+    "flag": {
+        "flagKey": "82fa639cfafe9c84918356ac2f1e91f4",
+        "flagTemplate": "ECSC{i_trusted_trust_to_trust_you_to_trust_me_but_now_i_dont_trust_trust}"
+    }
+}

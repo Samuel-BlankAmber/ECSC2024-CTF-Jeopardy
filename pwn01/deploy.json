@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/chall.py",
+          "container": "/home/user/chall",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "tcp",
+          "host": 47015,
+          "container": 1337
+        }
+      ],
+      "environment": {
+        "FLAG": "ECSC{y3t_an0th3r_C_pr0gr4m_w1th_1d10t_vulns_[random 8]}",
+        "TEMPDIRS": "/tmp"
+      }
+    }
+  }
+}

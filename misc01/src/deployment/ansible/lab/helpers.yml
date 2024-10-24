@@ -1,0 +1,33 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Install helpers
+  hosts: all
+  vars:
+    download_link_x64: "https://download.visualstudio.microsoft.com/download/pr/1754ea58-11a6-44ab-a262-696e194ce543/3642E3F95D50CC193E4B5A0B0FFBF7FE2C08801517758B4C8AEB7105A091208A/VC_redist.x64.exe"
+    download_link_x86: "https://download.visualstudio.microsoft.com/download/pr/b4834f47-d829-4e11-80f6-6e65081566b5/A32DD41EAAB0C5E1EAA78BE3C0BB73B48593DE8D97A7510B97DE3FD993538600/VC_redist.x86.exe"
+  tasks:
+    - name: Install Visual C (x64)
+      win_package:
+        path: "{{download_link_x64}}"
+        product_id: "{B8B3BB4A-A10D-4F51-91B7-A64FFAC31EA7}"
+        arguments: /install /passive /norestart
+
+    - name: Install Visual C (x86)
+      win_package:
+        path: "{{download_link_x86}}"
+        product_id: "{0C3457A0-3DCE-4A33-BEF0-9B528C557771}"
+        arguments: /install /passive /norestart
+
+- name: Install Visual Studio
+  hosts: dev
+  vars:
+    download_link: "https://download.visualstudio.microsoft.com/download/pr/f73d49f7-22b6-4a11-b980-72f3daae77a6/44979020185d840c0dc226c6eb3794ea0f09641b86709887afb8cb57991f697b/vs_Community.exe"
+  tasks:
+    - name: Install Visual Studio
+      win_package:
+        path: "{{download_link}}"
+        product_id: "{DCF89732-E559-4900-8844-7C6B27F28808}"
+        arguments: -q --productId Microsoft.VisualStudio.Product.Community --channelId VisualStudio.17.Release --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended
+        wait_for_children: true

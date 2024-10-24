@@ -1,0 +1,31 @@
+---------------------------------------------------
+Report for cell TOP_ENTITY
+   Instance path: TOP_ENTITY
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     129.00        100.0
+                                  LUT4	     172.00        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	         77        100.0
+                                RIPPLE	         34        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            PRINT_FLAG	          1        35.3
+                             FSM_CHALL	          1        62.8
+---------------------------------------------------
+Report for cell PRINT_FLAG
+   Instance path: TOP_ENTITY/print_flag
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      45.50        35.3
+                                  LUT4	      22.00        12.8
+                                PFUREG	         44        57.1
+                                RIPPLE	         34        100.0
+---------------------------------------------------
+Report for cell FSM_CHALL
+   Instance path: TOP_ENTITY/chall
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      81.00        62.8
+                                  LUT4	     128.00        74.4
+                                PFUREG	         33        42.9

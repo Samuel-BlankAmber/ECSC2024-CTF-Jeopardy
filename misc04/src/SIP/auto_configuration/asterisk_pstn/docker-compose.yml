@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  tele:
+    #image: mlan/asterisk:mini
+    build: .
+    network_mode: host
+    environment:
+      - SYSLOG_LEVEL=100      # Logging
+      - HOSTNAME=asterisk.local
+    volumes:
+      - /etc/localtime:/etc/localtime:ro    # Use host timezone
+      - ./config:/etc/asterisk
+      - ./sounds:/sounds
+      - ./en:/var/lib/asterisk/sounds/en
+      - ./scripts:/scripts
+      - ./recordings:/recordings
+volumes:
+  tele-conf:                                # Persistent storage

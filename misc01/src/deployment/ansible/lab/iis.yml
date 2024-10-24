@@ -1,0 +1,78 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Setup IIS
+  hosts: all
+  vars:
+    hostname: "{{lab.hosts[dict_key].hostname}}"
+    dotnet_src: "https://download.visualstudio.microsoft.com/download/pr/a154cee6-ab21-409b-8611-fb6c3b5b7513/b7da806505271536441f05ebd59627b2/dotnet-hosting-6.0.33-win.exe"
+    dotnet_dest: "C:\\Windows\\Temp\\dotnet-hosting-6.0.33-win.exe"
+  tasks:
+    - name: Install IIS Web-Server with sub features and management tools
+      win_feature:
+        name: Web-Server
+        state: present
+        include_sub_features: True
+        include_management_tools: True
+      register: win_feature
+
+    - name: Remove Default IIS website and site binding
+      win_iis_website:
+        name: "Default Web Site"
+        state: absent
+
+    - name: Download Microsoft ASP.NET Core 6.0 Runtime (v6.0.33) - Windows Hosting Bundle
+      win_get_url:
+        url: "{{dotnet_src}}"
+        dest: "{{dotnet_dest}}"
+
+    - name: Stop IIS
+      win_service:
+        name: W3SVC
+        state: stopped
+
+    - name: Install Microsoft ASP.NET Core 6.0 Runtime (v6.0.33) - Windows Hosting Bundle
+      win_command: "{{dotnet_dest}} /quiet /norestart"
+
+    - name: Copy applicationHost.config to remote host
+      win_copy:
+        src: applicationHost.config
+        dest: "C:\\Windows\\System32\\inetsrv\\config"
+        force: yes
+      retries: 10
+      delay: 60
+
+    - name: Start IIS
+      win_service:
+        name: W3SVC
+        state: started
+
+    - name: Clean up downloaded file
+      win_file:
+        path: "{{dotnet_dest}}"
+        state: absent
+    
+    - name: Copy directory to remote host
+      win_copy:
+        src: JAWS
+        dest: "C:\\Program Files\\"
+        force: yes
+
+    - name: Create Application Pool
+      win_iis_webapppool:
+        name: JAWS
+        state: started
+        attributes:
+          managedPipelineMode: Classic
+          processModel.identityType: LocalSystem
+
+    - name: Create Website
+      win_iis_website:
+        name: JAWS
+        state: started
+        application_pool: JAWS
+        port: 80
+        ip: "*"
+        hostname: "*"
+        physical_path: "C:\\Program Files\\JAWS\\Web"

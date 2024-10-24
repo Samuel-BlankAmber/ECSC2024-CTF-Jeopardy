@@ -1,0 +1,44 @@
+{
+  "title": "Bdecoder",
+  "description": "I built the fastest and most secure bencode decoder out there. Wanna take it for\na spin?\n\n```sh\nnc bdecoder.challs.jeopardy.ecsc2024.it 47006\n```",
+  "authors": [
+    "Marco Bonelli <@mebeim>"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [
+    "arm64",
+    "pac"
+  ],
+  "order": 43,
+  "flags": [
+    "^ECSC{[0-9a-f]{8}_P4C_a1nt_g0t_n0th1ng_0n_u_o7_[0-9a-f]{8}}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "bdecoder.tar.gz",
+      "type": "upload",
+      "path": "./attachments/bdecoder.tar.gz",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "bdecoder.challs.jeopardy.ecsc2024.it",
+    "port": 47006
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 120
+    }
+  }
+}

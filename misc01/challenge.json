@@ -1,0 +1,33 @@
+{
+  "title": "JAWS",
+  "description": "I was walking through the local mercato, chatting with my coworker about a simple web shell I had made for remote administration on Windows. The air was filled with the delicious scents of fresh tomatoes and basil. Out of nowhere, a vendor shouted, \"Patate locali!\" I stopped, wondering if they were talking to me or just selling their [local potatoes](https://decoder.cloud/2023/02/13/localpotato-when-swapping-the-context-leads-you-to-system/).\n\nThe flag is located at `C:\\flag\\flag.txt` and is only accessible by `NT AUTHORITY\\SYSTEM`.\n\nThe challenge runs on a fully patched Windows Server 2022. You will have access to a development machine with an identical setup to the target machine, with the following differences:\n\n1. The development machine has Visual Studio installed for building and testing exploits.\n2. The flag on the development machine is a placeholder dummy flag.\n3. The administrator user on the development machine does not exist on the target machine.\n4. The development machine is accessible via RDP and SMB, while the target machine is not.\n\nBoth machines have no internet access but can connect to your local machine.\n\n#### Target\n- **Site**: [http://jaws.challs.jeopardy.ecsc2024.it](http://jaws.challs.jeopardy.ecsc2024.it)\n- **Login**: `User` / `Passw0rd!`\n- **Access**: HTTP (port 80)\n\n#### Development\n- **Site**: [http://dev.jaws.challs.jeopardy.ecsc2024.it](http://dev.jaws.challs.jeopardy.ecsc2024.it)\n- **Administrator login**: `Admin` / `Passw0rd!`\n- **User login**: `User` / `Passw0rd!`\n- **Access**: RDP (port 3389), SMB (port 445), HTTP (port 80)",
+  "authors": [
+    "Oliver Lyak <@ly4k>"
+  ],
+  "tags": [
+    "misc"
+  ],
+  "hiddenTags": [],
+  "order": 33,
+  "flags": [
+    "^ECSC\\{i_com_i_sow_i_conquer_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://jaws.challs.jeopardy.ecsc2024.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 20
+    }
+  }
+}

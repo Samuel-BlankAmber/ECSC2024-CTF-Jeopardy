@@ -1,0 +1,41 @@
+{
+  "title": "Next Gen Crackme",
+  "description": "The world is constantly evolving, and so do CTF challenges.\n\n_Note: this and the Old Gen Crackme challenge are not related._\n\n_The timeout on the remote is 60 seconds._\n\n`nc ngc.challs.jeopardy.ecsc2024.it 47018`",
+  "authors": [
+    "Matteo Protopapa <@matpro>"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "order": 55,
+  "flags": [
+    "^ECSC\\{is_th1z__go0d_enough__4_you\\?_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "ngc",
+      "type": "upload",
+      "path": "./attachments/ngc",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "ngc.challs.jeopardy.ecsc2024.it",
+    "port": 47018
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 15
+    }
+  }
+}

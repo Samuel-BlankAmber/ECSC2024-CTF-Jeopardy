@@ -1,0 +1,46 @@
+{
+  "title": "One Round Crypto",
+  "description": "It's just one round of encryption. How hard can it be?\n\n_The timeout on the remote is 300 seconds._\n\n`nc oneroundcrypto.challs.jeopardy.ecsc2024.it 47010`",
+  "authors": [
+    "Matteo Rossi <@mr96>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 14,
+  "flags": [
+    "^ECSC\\{d035_7h15_d357r0y35_ASA\\?\\!_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "one_round_crypto.py",
+      "type": "upload",
+      "path": "./attachments/one_round_crypto.py",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "oneroundcrypto.challs.jeopardy.ecsc2024.it",
+    "port": 47010
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 300,
+      "runnerImage": "sagemath-10.4",
+      "commandPrefix": [
+        "sage",
+        "-python"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+services:
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  nginx:
+    image: nginx:1.25
+    environment:
+      NGINX_ENVSUBST_OUTPUT_DIR: "/etc/nginx"
+      BACKEND_HOST: "backend:8080"
+      FRONTEND_HOST: "frontend:3000"
+    volumes:
+      - ./nginx.conf:/etc/nginx/templates/nginx.conf.template
+    ports:
+      - "80:80"
+    networks:
+      - challenge
+
+networks:
+  challenge:

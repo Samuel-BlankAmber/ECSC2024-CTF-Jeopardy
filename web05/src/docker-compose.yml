@@ -1,0 +1,8 @@
+services:
+  fever_dream:
+    build: .
+    restart: unless-stopped
+    environment:
+      - FLAG=ECSC{pHp_f3ver_dre4ms_4re_w1ld}
+    ports:
+      - '3000:80'

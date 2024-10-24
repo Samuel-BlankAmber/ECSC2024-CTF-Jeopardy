@@ -1,0 +1,41 @@
+{
+  "title": "OffTopic",
+  "description": "Did you know that you only need FHE to build OT?\n\n_The timeout on the remote is 60 seconds._\n\n`nc offtopic.challs.jeopardy.ecsc2024.it 47013`",
+  "authors": [
+    "Riccardo Zanotto <@Drago>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 11,
+  "flags": [
+    "^ECSC\\{ch3w1n5_m0r3_7h4n_y0u_c4n_b1t_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "offtopic.py",
+      "type": "upload",
+      "path": "./attachments/offtopic.py",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "offtopic.challs.jeopardy.ecsc2024.it",
+    "port": 47013
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 30
+    }
+  }
+}

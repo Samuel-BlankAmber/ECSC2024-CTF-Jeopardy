@@ -1,0 +1,63 @@
+[ START MERGED ]
+n495 fpga_gpio_rst_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+print_flag/add_1756_19/S1
+print_flag/add_1756_19/S0
+print_flag/add_1756_5/S1
+print_flag/add_1756_5/S0
+print_flag/add_1756_21/S1
+print_flag/add_1756_21/S0
+print_flag/add_1756_23/S1
+print_flag/add_1756_23/S0
+print_flag/add_530_33/S1
+print_flag/add_530_33/CO
+print_flag/add_1756_25/S1
+print_flag/add_1756_25/S0
+print_flag/add_1756_7/S1
+print_flag/add_1756_7/S0
+print_flag/add_1756_27/S1
+print_flag/add_1756_27/S0
+print_flag/add_1756_29/S1
+print_flag/add_1756_29/S0
+print_flag/add_1756_31/S1
+print_flag/add_1756_31/S0
+print_flag/add_1756_33/S0
+print_flag/add_1756_33/CO
+print_flag/add_530_1/S0
+print_flag/add_530_1/CI
+print_flag/add_1756_9/S1
+print_flag/add_1756_9/S0
+print_flag/add_1756_1/S1
+print_flag/add_1756_1/S0
+print_flag/add_1756_1/CI
+print_flag/add_1756_11/S1
+print_flag/add_1756_11/S0
+print_flag/add_1756_13/S1
+print_flag/add_1756_13/S0
+print_flag/add_1756_15/S1
+print_flag/add_1756_15/S0
+print_flag/add_1756_17/S1
+print_flag/add_1756_17/S0
+print_flag/add_1756_3/S1
+print_flag/add_1756_3/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Sat Oct 05 21:18:12 2024
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "fpga_gpio_o[3]" SITE "PR16C" ;
+LOCATE COMP "fpga_gpio_clock" SITE "PR19D" ;
+LOCATE COMP "fpga_gpio_rst" SITE "PR19C" ;
+LOCATE COMP "fpga_gpio_i[0]" SITE "PR19B" ;
+LOCATE COMP "fpga_gpio_i[1]" SITE "PR19A" ;
+LOCATE COMP "fpga_gpio_i[2]" SITE "PR18D" ;
+LOCATE COMP "fpga_gpio_i[3]" SITE "PR18C" ;
+LOCATE COMP "fpga_gpio_o[0]" SITE "PR17D" ;
+LOCATE COMP "fpga_gpio_o[1]" SITE "PR17C" ;
+LOCATE COMP "fpga_gpio_o[2]" SITE "PR16D" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

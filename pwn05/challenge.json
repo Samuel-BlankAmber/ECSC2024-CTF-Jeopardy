@@ -1,0 +1,41 @@
+{
+  "title": "Baby VMA",
+  "description": "Welcome to \ud83c\udf7c BabyVMA \ud83c\udf7c : so simple yet so broken.\n\n_The timeout on the remote is 60 seconds._\n\n`nc babyvma.challs.jeopardy.ecsc2024.it 47011`",
+  "authors": [
+    "Vincenzo Bonforte <@Bonfee>"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "order": 45,
+  "flags": [
+    "^ECSC\\{gg_maybe_next_time_use_VM_IO_[a-z0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "babyvma.zip",
+      "type": "upload",
+      "path": "./attachments/babyvma.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "babyvma.challs.jeopardy.ecsc2024.it",
+    "port": 47011
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 30
+    }
+  }
+}

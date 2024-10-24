@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission
+        android:name="it.ecsc2024.jeopardy.chall.permission.CAN_USE_RECIPES"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VulnApp">
+
+        <service
+            android:name=".services.AddIngredientService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="it.ecsc2024.jeopardy.chall.ADD_INGREDIENT_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.AddSecretIngredientService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="it.ecsc2024.jeopardy.chall.ADD_SECRET_INGREDIENT_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.CreateRecipeService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="it.ecsc2024.jeopardy.chall.CREATE_RECIPE_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.DeleteRecipeService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="it.ecsc2024.jeopardy.chall.DELETE_RECIPE_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.ListRecipesService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="it.ecsc2024.jeopardy.chall.LIST_RECIPES_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".RecipeService"
+            android:exported="true"
+            android:permission="it.ecsc2024.jeopardy.chall.permission.CAN_USE_RECIPES" />
+    </application>
+</manifest>

@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "environment": {
+        "TARGET_PASSWORD": "redacted",
+        "FLAG": "ECSC{ju57_4_51mpl3_c5p7+p4r4m373r_p0llu710n_n07h1n6_m0r3_%s}"
+      },
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "ticket.challs.jeopardy.ecsc2024.it"
+        }
+      ]
+    },
+    "bot": {
+      "build": "src/bot",
+      "internet": true,
+      "environment": {
+        "WEB_DOM": "https://ticket.challs.jeopardy.ecsc2024.it",
+        "TARGET_PASSWORD": "redacted"
+      },
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 3000,
+          "hostname": "ticket-bot.challs.jeopardy.ecsc2024.it"
+        }
+      ],
+      "depends-on": [
+        "app"
+      ]
+    }
+  }
+}

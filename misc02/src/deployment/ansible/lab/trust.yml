@@ -1,0 +1,67 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Setup DNS forwarders
+  hosts: all
+  vars:
+    domain: "{{lab.hosts[dict_key].domain}}"
+    forwarder: "{{lab.domains[domain].forwarder}}"
+    zone_name: "{{forwarder}}"
+    remote_dc: "{{lab.domains[forwarder].dc}}"
+    master_server: "{{hostvars[remote_dc].ansible_host}}"
+    replication: "forest"
+  tasks:
+    - name: Add dns server zone
+      community.windows.win_dns_zone:
+        name: "{{zone_name}}"
+        type: forwarder
+        replication: "{{replication}}"
+        dns_servers:
+          - "{{master_server}}"
+
+- name: Setup trust
+  hosts: trusted
+  vars:
+    domain: "{{lab.hosts[dict_key].domain}}"
+    remote_forest: "{{lab.domains[domain].trust}}"
+    trust_direction: "{{lab.domains[domain].trust_direction}}"
+    remote_admin: "{{credentials[remote_forest].username}}@{{remote_forest}}"
+    remote_admin_password: "{{credentials[remote_forest].password}}"
+    zone_name: "{{remote_forest}}"
+    remote_dc: "{{lab.domains[remote_forest].dc}}"
+    master_server: "{{hostvars[remote_dc].ansible_host}}"
+  tasks:
+    - name: Add trusts between domain
+      ansible.windows.win_powershell:
+        script: |
+          [CmdletBinding()]
+          param (
+              [String]
+              $RemoteForest,
+
+              [String]
+              $RemoteAdmin,
+
+              [String]
+              $RemoteAdminPassword,
+
+              [String]
+              $TrustDirection
+          )
+          $localforest=[System.DirectoryServices.ActiveDirectory.Forest]::getCurrentForest()
+          try {
+            $localForest.GetTrustRelationship($RemoteForest)
+            $Ansible.Changed = $false
+          } catch [System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException] {
+            $Ansible.Changed = $true
+            $remoteContext = New-Object -TypeName "System.DirectoryServices.ActiveDirectory.DirectoryContext" -ArgumentList @( "Forest", $RemoteForest, $RemoteAdmin, $RemoteAdminPassword)
+            $distantForest = [System.DirectoryServices.ActiveDirectory.Forest]::getForest($remoteContext)
+            $localForest.CreateTrustRelationship($distantForest, $TrustDirection)
+          }
+        error_action: stop
+        parameters:
+          RemoteForest: "{{remote_forest}}"
+          RemoteAdmin: "{{remote_admin}}"
+          RemoteAdminPassword: "{{remote_admin_password}}"
+          TrustDirection: "{{trust_direction}}"

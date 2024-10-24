@@ -1,0 +1,466 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Oct 05 21:18:12 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     TOP_ENTITY
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets fpga_gpio_clock_c]
+            1558 items scored, 1558 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 7.968ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \print_flag/char_idx_i0  (from fpga_gpio_clock_c +)
+   Destination:    FD1S3AX    D              \print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:                  12.822ns  (60.3% logic, 39.7% route), 36 logic levels.
+
+ Constraint Details:
+
+     12.822ns data_path \print_flag/char_idx_i0 to \print_flag/char_idx_i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 7.968ns
+
+ Path Details: \print_flag/char_idx_i0 to \print_flag/char_idx_i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \print_flag/char_idx_i0 (from fpga_gpio_clock_c)
+Route        11   e 1.411                                  \print_flag/char_idx[0]
+A1_TO_FCO   ---     0.752           A[2] to COUT           \print_flag/add_1756_1
+Route         1   e 0.020                                  \print_flag/n1996
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_3
+Route         1   e 0.020                                  \print_flag/n1997
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_5
+Route         1   e 0.020                                  \print_flag/n1998
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_7
+Route         1   e 0.020                                  \print_flag/n1999
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_9
+Route         1   e 0.020                                  \print_flag/n2000
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_11
+Route         1   e 0.020                                  \print_flag/n2001
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_13
+Route         1   e 0.020                                  \print_flag/n2002
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_15
+Route         1   e 0.020                                  \print_flag/n2003
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_17
+Route         1   e 0.020                                  \print_flag/n2004
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_19
+Route         1   e 0.020                                  \print_flag/n2005
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_21
+Route         1   e 0.020                                  \print_flag/n2006
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_23
+Route         1   e 0.020                                  \print_flag/n2007
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_25
+Route         1   e 0.020                                  \print_flag/n2008
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_27
+Route         1   e 0.020                                  \print_flag/n2009
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_29
+Route         1   e 0.020                                  \print_flag/n2010
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_31
+Route         1   e 0.020                                  \print_flag/n2011
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_1756_33
+Route         5   e 1.462                                  \print_flag/nibble_select_N_138
+LUT4        ---     0.448              B to Z              \print_flag/i1223_2_lut
+Route         1   e 0.788                                  \print_flag/n1403
+A1_TO_FCO   ---     0.752           B[2] to COUT           \print_flag/add_530_1
+Route         1   e 0.020                                  \print_flag/n2012
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_3
+Route         1   e 0.020                                  \print_flag/n2013
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_5
+Route         1   e 0.020                                  \print_flag/n2014
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_7
+Route         1   e 0.020                                  \print_flag/n2015
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_9
+Route         1   e 0.020                                  \print_flag/n2016
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_11
+Route         1   e 0.020                                  \print_flag/n2017
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_13
+Route         1   e 0.020                                  \print_flag/n2018
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_15
+Route         1   e 0.020                                  \print_flag/n2019
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_17
+Route         1   e 0.020                                  \print_flag/n2020
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_19
+Route         1   e 0.020                                  \print_flag/n2021
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_21
+Route         1   e 0.020                                  \print_flag/n2022
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_23
+Route         1   e 0.020                                  \print_flag/n2023
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_25
+Route         1   e 0.020                                  \print_flag/n2024
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_27
+Route         1   e 0.020                                  \print_flag/n2025
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_29
+Route         1   e 0.020                                  \print_flag/n2026
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_31
+Route         1   e 0.020                                  \print_flag/n2027
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_530_33
+Route         1   e 0.788                                  \print_flag/char_idx_31__N_52[31]
+                  --------
+                   12.822  (60.3% logic, 39.7% route), 36 logic levels.
+
+
+Error:  The following path violates requirements by 7.951ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \print_flag/char_idx_i2  (from fpga_gpio_clock_c +)
+   Destination:    FD1S3AX    D              \print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:                  12.805ns  (59.3% logic, 40.7% route), 35 logic levels.
+
+ Constraint Details:
+
+     12.805ns data_path \print_flag/char_idx_i2 to \print_flag/char_idx_i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 7.951ns
+
+ Path Details: \print_flag/char_idx_i2 to \print_flag/char_idx_i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \print_flag/char_idx_i2 (from fpga_gpio_clock_c)
+Route        14   e 1.557                                  \print_flag/char_idx[2]
+A1_TO_FCO   ---     0.752           A[2] to COUT           \print_flag/add_1756_3
+Route         1   e 0.020                                  \print_flag/n1997
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_5
+Route         1   e 0.020                                  \print_flag/n1998
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_7
+Route         1   e 0.020                                  \print_flag/n1999
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_9
+Route         1   e 0.020                                  \print_flag/n2000
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_11
+Route         1   e 0.020                                  \print_flag/n2001
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_13
+Route         1   e 0.020                                  \print_flag/n2002
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_15
+Route         1   e 0.020                                  \print_flag/n2003
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_17
+Route         1   e 0.020                                  \print_flag/n2004
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_19
+Route         1   e 0.020                                  \print_flag/n2005
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_21
+Route         1   e 0.020                                  \print_flag/n2006
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_23
+Route         1   e 0.020                                  \print_flag/n2007
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_25
+Route         1   e 0.020                                  \print_flag/n2008
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_27
+Route         1   e 0.020                                  \print_flag/n2009
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_29
+Route         1   e 0.020                                  \print_flag/n2010
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_31
+Route         1   e 0.020                                  \print_flag/n2011
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_1756_33
+Route         5   e 1.462                                  \print_flag/nibble_select_N_138
+LUT4        ---     0.448              B to Z              \print_flag/i1223_2_lut
+Route         1   e 0.788                                  \print_flag/n1403
+A1_TO_FCO   ---     0.752           B[2] to COUT           \print_flag/add_530_1
+Route         1   e 0.020                                  \print_flag/n2012
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_3
+Route         1   e 0.020                                  \print_flag/n2013
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_5
+Route         1   e 0.020                                  \print_flag/n2014
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_7
+Route         1   e 0.020                                  \print_flag/n2015
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_9
+Route         1   e 0.020                                  \print_flag/n2016
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_11
+Route         1   e 0.020                                  \print_flag/n2017
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_13
+Route         1   e 0.020                                  \print_flag/n2018
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_15
+Route         1   e 0.020                                  \print_flag/n2019
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_17
+Route         1   e 0.020                                  \print_flag/n2020
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_19
+Route         1   e 0.020                                  \print_flag/n2021
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_21
+Route         1   e 0.020                                  \print_flag/n2022
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_23
+Route         1   e 0.020                                  \print_flag/n2023
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_25
+Route         1   e 0.020                                  \print_flag/n2024
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_27
+Route         1   e 0.020                                  \print_flag/n2025
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_29
+Route         1   e 0.020                                  \print_flag/n2026
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_31
+Route         1   e 0.020                                  \print_flag/n2027
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_530_33
+Route         1   e 0.788                                  \print_flag/char_idx_31__N_52[31]
+                  --------
+                   12.805  (59.3% logic, 40.7% route), 35 logic levels.
+
+
+Error:  The following path violates requirements by 7.948ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \print_flag/char_idx_i1  (from fpga_gpio_clock_c +)
+   Destination:    FD1S3AX    D              \print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:                  12.802ns  (59.3% logic, 40.7% route), 35 logic levels.
+
+ Constraint Details:
+
+     12.802ns data_path \print_flag/char_idx_i1 to \print_flag/char_idx_i31 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 7.948ns
+
+ Path Details: \print_flag/char_idx_i1 to \print_flag/char_idx_i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \print_flag/char_idx_i1 (from fpga_gpio_clock_c)
+Route        13   e 1.554                                  \print_flag/char_idx[1]
+A1_TO_FCO   ---     0.752           A[2] to COUT           \print_flag/add_1756_3
+Route         1   e 0.020                                  \print_flag/n1997
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_5
+Route         1   e 0.020                                  \print_flag/n1998
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_7
+Route         1   e 0.020                                  \print_flag/n1999
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_9
+Route         1   e 0.020                                  \print_flag/n2000
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_11
+Route         1   e 0.020                                  \print_flag/n2001
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_13
+Route         1   e 0.020                                  \print_flag/n2002
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_15
+Route         1   e 0.020                                  \print_flag/n2003
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_17
+Route         1   e 0.020                                  \print_flag/n2004
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_19
+Route         1   e 0.020                                  \print_flag/n2005
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_21
+Route         1   e 0.020                                  \print_flag/n2006
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_23
+Route         1   e 0.020                                  \print_flag/n2007
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_25
+Route         1   e 0.020                                  \print_flag/n2008
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_27
+Route         1   e 0.020                                  \print_flag/n2009
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_29
+Route         1   e 0.020                                  \print_flag/n2010
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_1756_31
+Route         1   e 0.020                                  \print_flag/n2011
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_1756_33
+Route         5   e 1.462                                  \print_flag/nibble_select_N_138
+LUT4        ---     0.448              B to Z              \print_flag/i1223_2_lut
+Route         1   e 0.788                                  \print_flag/n1403
+A1_TO_FCO   ---     0.752           B[2] to COUT           \print_flag/add_530_1
+Route         1   e 0.020                                  \print_flag/n2012
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_3
+Route         1   e 0.020                                  \print_flag/n2013
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_5
+Route         1   e 0.020                                  \print_flag/n2014
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_7
+Route         1   e 0.020                                  \print_flag/n2015
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_9
+Route         1   e 0.020                                  \print_flag/n2016
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_11
+Route         1   e 0.020                                  \print_flag/n2017
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_13
+Route         1   e 0.020                                  \print_flag/n2018
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_15
+Route         1   e 0.020                                  \print_flag/n2019
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_17
+Route         1   e 0.020                                  \print_flag/n2020
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_19
+Route         1   e 0.020                                  \print_flag/n2021
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_21
+Route         1   e 0.020                                  \print_flag/n2022
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_23
+Route         1   e 0.020                                  \print_flag/n2023
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_25
+Route         1   e 0.020                                  \print_flag/n2024
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_27
+Route         1   e 0.020                                  \print_flag/n2025
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_29
+Route         1   e 0.020                                  \print_flag/n2026
+FCI_TO_FCO  ---     0.143            CIN to COUT           \print_flag/add_530_31
+Route         1   e 0.020                                  \print_flag/n2027
+FCI_TO_F    ---     0.544            CIN to S[2]           \print_flag/add_530_33
+Route         1   e 0.788                                  \print_flag/char_idx_31__N_52[31]
+                  --------
+                   12.802  (59.3% logic, 40.7% route), 35 logic levels.
+
+Warning: 12.968 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets fpga_gpio_clock_c]       |     5.000 ns|    12.968 ns|    36 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\print_flag/n2012                       |       1|    1310|     84.08%
+                                        |        |        |
+\print_flag/n2013                       |       1|    1248|     80.10%
+                                        |        |        |
+\print_flag/n2014                       |       1|    1182|     75.87%
+                                        |        |        |
+\print_flag/n2015                       |       1|    1112|     71.37%
+                                        |        |        |
+\print_flag/nibble_select_N_138         |       5|    1046|     67.14%
+                                        |        |        |
+\print_flag/n2016                       |       1|    1038|     66.62%
+                                        |        |        |
+\print_flag/n2011                       |       1|    1031|     66.17%
+                                        |        |        |
+\print_flag/n2010                       |       1|     981|     62.97%
+                                        |        |        |
+\print_flag/n1403                       |       1|     967|     62.07%
+                                        |        |        |
+\print_flag/n2017                       |       1|     964|     61.87%
+                                        |        |        |
+\print_flag/n2009                       |       1|     927|     59.50%
+                                        |        |        |
+\print_flag/n2018                       |       1|     890|     57.12%
+                                        |        |        |
+\print_flag/n2008                       |       1|     869|     55.78%
+                                        |        |        |
+\print_flag/n2019                       |       1|     814|     52.25%
+                                        |        |        |
+\print_flag/n2007                       |       1|     807|     51.80%
+                                        |        |        |
+\print_flag/n2006                       |       1|     745|     47.82%
+                                        |        |        |
+\print_flag/n2020                       |       1|     720|     46.21%
+                                        |        |        |
+\print_flag/n2005                       |       1|     683|     43.84%
+                                        |        |        |
+\print_flag/n2021                       |       1|     624|     40.05%
+                                        |        |        |
+\print_flag/n2004                       |       1|     621|     39.86%
+                                        |        |        |
+\print_flag/n2003                       |       1|     559|     35.88%
+                                        |        |        |
+\print_flag/n2022                       |       1|     528|     33.89%
+                                        |        |        |
+\print_flag/n2002                       |       1|     495|     31.77%
+                                        |        |        |
+visit_complete                          |      28|     448|     28.75%
+                                        |        |        |
+\print_flag/n2023                       |       1|     432|     27.73%
+                                        |        |        |
+\print_flag/n2001                       |       1|     431|     27.66%
+                                        |        |        |
+\print_flag/n2000                       |       1|     367|     23.56%
+                                        |        |        |
+\print_flag/n2024                       |       1|     336|     21.57%
+                                        |        |        |
+\chall/n30                              |       1|     310|     19.90%
+                                        |        |        |
+\print_flag/n1999                       |       1|     303|     19.45%
+                                        |        |        |
+\print_flag/n2025                       |       1|     240|     15.40%
+                                        |        |        |
+\print_flag/n1998                       |       1|     225|     14.44%
+                                        |        |        |
+\chall/n28                              |       1|     184|     11.81%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 1558  Score: 7261975
+
+Constraints cover  4223 paths, 254 nets, and 599 connections (67.7% coverage)
+
+
+Peak memory: 86560768 bytes, TRCE: 5218304 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

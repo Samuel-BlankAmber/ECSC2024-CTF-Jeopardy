@@ -1,0 +1,347 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file pizzafpga_syn_map.ncd.
+Design name: TOP_ENTITY
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/Program Files/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Sat Oct 05 21:18:13 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o PizzaFPGA_syn.tw1 -gui -msgset F:/Gits/Challenge-154/src/PizzaFPGA/promote.xml PizzaFPGA_syn_map.ncd PizzaFPGA_syn.prf 
+Design file:     pizzafpga_syn_map.ncd
+Preference file: pizzafpga_syn.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY 60.000000 MHz (0 errors)</A></LI>            4058 items scored, 0 timing errors detected.
+Report:   89.509MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY 60.000000 MHz ;
+            4058 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 5.495ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i0  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.022ns  (71.7% logic, 28.3% route), 36 logic levels.
+
+ Constraint Details:
+
+     11.022ns physical path delay print_flag/SLICE_17 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.495ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_17 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 */SLICE_17.CLK to *g/SLICE_17.Q1 print_flag/SLICE_17 (from fpga_gpio_clock_c)
+ROUTE        11   e 1.030 *g/SLICE_17.Q1 to *g/SLICE_13.A1 print_flag/char_idx_0
+C1TOFCO_DE  ---     0.786 *g/SLICE_13.A1 to */SLICE_13.FCO print_flag/SLICE_13
+ROUTE         1   e 0.001 */SLICE_13.FCO to *g/SLICE_0.FCI print_flag/n1996
+FCITOFCO_D  ---     0.146 *g/SLICE_0.FCI to *g/SLICE_0.FCO print_flag/SLICE_0
+ROUTE         1   e 0.001 *g/SLICE_0.FCO to */SLICE_30.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146 */SLICE_30.FCI to */SLICE_30.FCO print_flag/SLICE_30
+ROUTE         1   e 0.001 */SLICE_30.FCO to */SLICE_22.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146 */SLICE_22.FCI to */SLICE_22.FCO print_flag/SLICE_22
+ROUTE         1   e 0.001 */SLICE_22.FCO to */SLICE_15.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146 */SLICE_15.FCI to */SLICE_15.FCO print_flag/SLICE_15
+ROUTE         1   e 0.001 */SLICE_15.FCO to */SLICE_11.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146 */SLICE_11.FCI to */SLICE_11.FCO print_flag/SLICE_11
+ROUTE         1   e 0.001 */SLICE_11.FCO to *g/SLICE_8.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146 *g/SLICE_8.FCI to *g/SLICE_8.FCO print_flag/SLICE_8
+ROUTE         1   e 0.001 *g/SLICE_8.FCO to *g/SLICE_7.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146 *g/SLICE_7.FCI to *g/SLICE_7.FCO print_flag/SLICE_7
+ROUTE         1   e 0.001 *g/SLICE_7.FCO to *g/SLICE_1.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146 *g/SLICE_1.FCI to *g/SLICE_1.FCO print_flag/SLICE_1
+ROUTE         1   e 0.001 *g/SLICE_1.FCO to */SLICE_31.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146 */SLICE_31.FCI to */SLICE_31.FCO print_flag/SLICE_31
+ROUTE         1   e 0.001 */SLICE_31.FCO to */SLICE_28.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146 */SLICE_28.FCI to */SLICE_28.FCO print_flag/SLICE_28
+ROUTE         1   e 0.001 */SLICE_28.FCO to */SLICE_26.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146 */SLICE_26.FCI to */SLICE_26.FCO print_flag/SLICE_26
+ROUTE         1   e 0.001 */SLICE_26.FCO to */SLICE_23.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146 */SLICE_23.FCI to */SLICE_23.FCO print_flag/SLICE_23
+ROUTE         1   e 0.001 */SLICE_23.FCO to */SLICE_21.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146 */SLICE_21.FCI to */SLICE_21.FCO print_flag/SLICE_21
+ROUTE         1   e 0.001 */SLICE_21.FCO to */SLICE_20.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146 */SLICE_20.FCI to */SLICE_20.FCO print_flag/SLICE_20
+ROUTE         1   e 0.001 */SLICE_20.FCO to */SLICE_19.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146 */SLICE_19.FCI to */SLICE_19.FCO print_flag/SLICE_19
+ROUTE         1   e 0.001 */SLICE_19.FCO to */SLICE_18.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569 */SLICE_18.FCI to *g/SLICE_18.F1 print_flag/SLICE_18
+ROUTE         5   e 1.030 *g/SLICE_18.F1 to */SLICE_121.B1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452 */SLICE_121.B1 to */SLICE_121.F1 print_flag/SLICE_121
+ROUTE         1   e 1.030 */SLICE_121.F1 to *g/SLICE_17.B1 print_flag/n1403
+C1TOFCO_DE  ---     0.786 *g/SLICE_17.B1 to */SLICE_17.FCO print_flag/SLICE_17
+ROUTE         1   e 0.001 */SLICE_17.FCO to */SLICE_16.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146 */SLICE_16.FCI to */SLICE_16.FCO print_flag/SLICE_16
+ROUTE         1   e 0.001 */SLICE_16.FCO to */SLICE_14.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146 */SLICE_14.FCI to */SLICE_14.FCO print_flag/SLICE_14
+ROUTE         1   e 0.001 */SLICE_14.FCO to */SLICE_12.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146 */SLICE_12.FCI to */SLICE_12.FCO print_flag/SLICE_12
+ROUTE         1   e 0.001 */SLICE_12.FCO to */SLICE_10.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146 */SLICE_10.FCI to */SLICE_10.FCO print_flag/SLICE_10
+ROUTE         1   e 0.001 */SLICE_10.FCO to *g/SLICE_9.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146 *g/SLICE_9.FCI to *g/SLICE_9.FCO print_flag/SLICE_9
+ROUTE         1   e 0.001 *g/SLICE_9.FCO to *g/SLICE_6.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146 *g/SLICE_6.FCI to *g/SLICE_6.FCO print_flag/SLICE_6
+ROUTE         1   e 0.001 *g/SLICE_6.FCO to *g/SLICE_5.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146 *g/SLICE_5.FCI to *g/SLICE_5.FCO print_flag/SLICE_5
+ROUTE         1   e 0.001 *g/SLICE_5.FCO to *g/SLICE_4.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146 *g/SLICE_4.FCI to *g/SLICE_4.FCO print_flag/SLICE_4
+ROUTE         1   e 0.001 *g/SLICE_4.FCO to *g/SLICE_3.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146 *g/SLICE_3.FCI to *g/SLICE_3.FCO print_flag/SLICE_3
+ROUTE         1   e 0.001 *g/SLICE_3.FCO to *g/SLICE_2.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146 *g/SLICE_2.FCI to *g/SLICE_2.FCO print_flag/SLICE_2
+ROUTE         1   e 0.001 *g/SLICE_2.FCO to */SLICE_33.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146 */SLICE_33.FCI to */SLICE_33.FCO print_flag/SLICE_33
+ROUTE         1   e 0.001 */SLICE_33.FCO to */SLICE_32.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146 */SLICE_32.FCI to */SLICE_32.FCO print_flag/SLICE_32
+ROUTE         1   e 0.001 */SLICE_32.FCO to */SLICE_29.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146 */SLICE_29.FCI to */SLICE_29.FCO print_flag/SLICE_29
+ROUTE         1   e 0.001 */SLICE_29.FCO to */SLICE_27.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146 */SLICE_27.FCI to */SLICE_27.FCO print_flag/SLICE_27
+ROUTE         1   e 0.001 */SLICE_27.FCO to */SLICE_25.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146 */SLICE_25.FCI to */SLICE_25.FCO print_flag/SLICE_25
+ROUTE         1   e 0.001 */SLICE_25.FCO to */SLICE_24.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517 */SLICE_24.FCI to *g/SLICE_24.F0 print_flag/SLICE_24
+ROUTE         1   e 0.001 *g/SLICE_24.F0 to */SLICE_24.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.022   (71.7% logic, 28.3% route), 36 logic levels.
+
+Report:   89.509MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY 60.000000 MHz ;               |   60.000 MHz|   89.509 MHz|  36  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: fpga_gpio_clock_c   Source: fpga_gpio_clock.PAD   Loads: 55
+   Covered under: FREQUENCY 60.000000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4058 paths, 1 nets, and 566 connections (68.28% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Sat Oct 05 21:18:13 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o PizzaFPGA_syn.tw1 -gui -msgset F:/Gits/Challenge-154/src/PizzaFPGA/promote.xml PizzaFPGA_syn_map.ncd PizzaFPGA_syn.prf 
+Design file:     pizzafpga_syn_map.ncd
+Preference file: pizzafpga_syn.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY 60.000000 MHz (0 errors)</A></LI>            4058 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY 60.000000 MHz ;
+            4058 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.441ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              chall/state_FSM_i0_i2  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        chall/state_FSM_i0_i2  (to fpga_gpio_clock_c +)
+
+   Delay:               0.428ns  (53.3% logic, 46.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.428ns physical path delay chall/SLICE_42 to chall/SLICE_42 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.441ns
+
+ Physical Path Details:
+
+      Data path chall/SLICE_42 to chall/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_42.CLK to *l/SLICE_42.Q0 chall/SLICE_42 (from fpga_gpio_clock_c)
+ROUTE         6   e 0.199 *l/SLICE_42.Q0 to *l/SLICE_42.M0 chall/n385
+MTOOFX_DEL  ---     0.095 *l/SLICE_42.M0 to *SLICE_42.OFX0 chall/SLICE_42
+ROUTE         1   e 0.001 *SLICE_42.OFX0 to */SLICE_42.DI0 chall/n2466 (to fpga_gpio_clock_c)
+                  --------
+                    0.428   (53.3% logic, 46.7% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY 60.000000 MHz ;               |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: fpga_gpio_clock_c   Source: fpga_gpio_clock.PAD   Loads: 55
+   Covered under: FREQUENCY 60.000000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4058 paths, 1 nets, and 566 connections (68.28% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

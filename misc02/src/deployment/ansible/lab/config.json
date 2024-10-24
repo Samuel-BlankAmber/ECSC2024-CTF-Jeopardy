@@ -1,0 +1,28 @@
+{
+  "lab": {
+    "hosts": {
+      "dca": {
+        "hostname": "dc",
+        "domain": "pizza.local"
+      },
+      "dcb": {
+        "hostname": "dc",
+        "domain": "spaghetti.local"
+      }
+    },
+    "domains" : {
+      "pizza.local": {
+        "dc": "dca",
+        "netbios_name": "PIZZA",
+        "forwarder": "spaghetti.local"
+      },
+      "spaghetti.local": {
+        "dc": "dcb",
+        "netbios_name": "SPAGHETTI",
+        "trust": "pizza.local",
+        "trust_direction": "Inbound",
+        "forwarder": "pizza.local"
+      }
+    }
+  }
+}

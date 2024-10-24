@@ -1,0 +1,1 @@
+^ECSC\{__Secure\?_wh4t-if-1-used-php-8\.2\.0\?_[a-f0-9]{8}\}$

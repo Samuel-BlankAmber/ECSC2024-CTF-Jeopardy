@@ -1,0 +1,12 @@
+services:
+  emulator:
+    build: emu
+    restart: no
+    devices:
+      - /dev/kvm
+
+  web:
+    build: web
+    restart: no
+    ports:
+      - "8080:8080"

@@ -1,0 +1,1 @@
+^ECSC{[0-9a-f]{8}_Certified_Pro_Guesser_B\)_[0-9a-f]{8}}$

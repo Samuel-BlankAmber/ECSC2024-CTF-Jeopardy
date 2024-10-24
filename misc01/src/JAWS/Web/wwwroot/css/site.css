@@ -1,0 +1,132 @@
+:root {
+  --font: "Cascadia Code", monospace;
+  --foreground: #cccccc;
+  --background: #2d2e2c;
+  --cursor-color: #ffffff;
+  --black: #2d2e2c;
+  --red: #c50f1f;
+  --green: #13a10e;
+  --yellow: #c19c00;
+  --blue: #0037da;
+  --purple: #881798;
+  --cyan: #3a96dd;
+  --white: #cccccc;
+  --bright-black: #767676;
+  --bright-red: #e74856;
+  --bright-green: #16c60c;
+  --bright-yellow: #f9f1a5;
+  --bright-blue: #3b78ff;
+  --bright-purple: #b4009e;
+  --bright-cyan: #61d6d6;
+  --bright-white: #f2f2f2;
+  --color: var(--foreground);
+  --error-color: var(--bright-red);
+  --link-color: var(--foreground);
+  --animation: terminal-bar;
+  --size: 1.5;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url(/fonts/CascadiaCode.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  font-size: 14px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 7px;
+}
+
+#terminal {
+  padding: 20px;
+  background-color: #2d2e2c;
+  width: 100%;
+  height: 100%;
+}
+
+.token.comment {
+  --color: var(--green);
+}
+
+.token.string {
+  --color: var(--bright-blue);
+}
+
+.token.boolean,
+.token.variable,
+.token.keywoard {
+  --color: var(--bright-green);
+}
+
+.token.function {
+  --color: var(--bright-yellow);
+}
+
+.token.operator,
+.token.punctuation {
+  --color: var(--bright-black);
+}
+
+.terminal-error {
+  --color: var(--bright-red);
+}
+
+.terminal .token.important,
+.cmd .token.important,
+.terminal-external .token.important {
+  font-weight: normal;
+}
+
+.terminal .token.bold,
+.cmd .token.bold,
+.terminal-external .token.bold {
+  font-weight: bold;
+}
+
+.terminal .token.italic,
+.cmd .token.italic,
+.terminal-external .token.italic {
+  font-style: italic;
+}
+
+.terminal .token.entity,
+.cmd .token.entity,
+.terminal-external .token.entity {
+  cursor: help;
+}
+
+.terminal .token.namespace,
+.cmd .token.namespace,
+.terminal-external .token.namespace {
+  opacity: 0.7;
+}
+
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+  color: var(--color);
+  background: var(--background);
+  --original-color: var(--color);
+}
+
+.cmd a[href]:not(.terminal-inverted),
+.terminal .terminal-output > :not(.raw) a[href]:not(.terminal-inverted),
+.terminal.external a[href]:not(.terminal-inverted) {
+  text-decoration: none !important;
+}
+
+.cmd a[href]:hover,
+.terminal .terminal-output > :not(.raw) a[href]:hover,
+.terminal.external a[href]:hover {
+  background-color: inherit !important;
+  text-decoration: underline !important;
+  color: var(--link-color) !important;
+}

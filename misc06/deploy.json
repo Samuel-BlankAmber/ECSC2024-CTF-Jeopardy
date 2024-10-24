@@ -1,0 +1,35 @@
+{
+  "enabled": true,
+  "instancer": {
+    "hostname": "intentbakery.challs.jeopardy.ecsc2024.it",
+    "secure": true,
+    "duration": 5
+  },
+  "services": {
+    "app": {
+      "build": "src/web",
+      "environment": {
+        "EMULATOR_HOST": "{{ .services.emulator.hostname }}"
+      },
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 8080,
+          "hostname": "intentbakery.challs.jeopardy.ecsc2024.it"
+        }
+      ],
+      "depends-on": [
+        "emulator"
+      ]
+    },
+    "emulator": {
+      "build": "src/emu",
+      "internet": true,
+      "kvm": true,
+      "limits": {
+        "memory": 4096
+      }
+    }
+  }
+}

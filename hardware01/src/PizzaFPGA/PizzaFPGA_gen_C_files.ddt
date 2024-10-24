@@ -1,0 +1,18 @@
+[Deployment Project]
+version=Lattice Diamond 3.13.0.56.2
+EncryptionVer=1.0
+functionIdx=2
+typeIdx=10
+isRequiredXCFFile=1
+xcfFileName=F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn.xcf
+optionList=Compress Embedded Files;Generate Hex (.c) File
+valueList=On;On
+
+[Input File Info]
+inputFileList=
+familyList=
+deviceList=
+outputFileList=F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn_algo.vme;F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn_data.vme
+
+[Command Line]
+Command="C:/Program Files/lscc/diamond/3.13/bin/nt64/ddtcmd" -oft -slimvme -if "F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn.xcf" -hex -ofa "F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn_algo.vme" -ofd "F:/Gits/Challenge-154/src/PizzaFPGA/syn/syn_data.vme"

@@ -1,0 +1,539 @@
+# Reading pref.tcl
+# do {F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA_SIM/PizzaFPGA_SIM.mdo}
+# Loading project PizzaFPGA_SIM
+# Compile of FSM_CHALL.vhd was successful.
+# vsim -L work -L pmi_work -L ovi_machxo2 FPGA_testbench 
+# Start time: 19:45:15 on Oct 05,2024
+# //  ModelSim - Lattice FPGA Edition 2023.3 Jul 18 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fpga_testbench(test)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: giova  Hostname: WORKSTATION  ProcessID: 45024
+#           Attempting to use alternate WLF file "./wlftvzdn2t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvzdn2t
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd failed with 1 errors.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 170 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 170 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 210 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 210 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 230 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 230 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 290 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 290 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+run
+run
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+restart
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd failed with 1 errors.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 170 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 210 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 230 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 290 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+run
+add wave -position end  sim:/fpga_testbench/UUT/chall/visit_complete
+add wave -position end  sim:/fpga_testbench/UUT/chall/visited
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 3  Instance: /fpga_testbench/UUT/chall
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /fpga_testbench/UUT/chall
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /fpga_testbench/UUT/chall
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /fpga_testbench/UUT/chall
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /fpga_testbench/UUT/chall
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run -continue
+restart
+run
+run
+restart
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+add wave -position end  sim:/fpga_testbench/UUT/chall/state
+restart
+run
+run
+add wave -position end  sim:/fpga_testbench/UUT/chall_enable
+add wave -position end  sim:/fpga_testbench/UUT/print_enable
+add wave -position end  sim:/fpga_testbench/UUT/visit_complete
+restart
+run
+run
+run
+restart
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd failed with 5 errors.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 1 failed with 5 errors.
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+run
+# Compile of PRINT_FLAG.vhd was successful.
+# Compile of FSM_CHALL.vhd was successful.
+# Compile of TOP_ENTITY.vhd was successful.
+# Compile of FPGA_testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fpga_testbench(test)
+# Loading work.top_entity(structural)
+# Loading work.fsm_chall(behavioral)
+# Loading work.print_flag(behavioral)
+run
+run
+run
+# End time: 21:21:23 on Oct 05,2024, Elapsed time: 1:36:08
+# Errors: 0, Warnings: 1

@@ -1,0 +1,55 @@
+services:
+  nginx:
+    build: ./nginx/
+    ports:
+      - "80:80"
+    environment:
+      - PASSWORD=secretpassword
+      - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
+      - API_HOST=api:3000
+      - PAYWALL_HOST=paywall:3000
+      - REPORTER_HOST=reporter:3000
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/templates/nginx.conf.template:ro
+      - ./secret-manager/build:/var/www/
+
+  paywall:
+    build: ./paywall/
+    environment:
+      - PASSWORD=secretpassword
+
+  reporter:
+    build: ./reporter/
+    environment:
+      - CHALL_URL=http://nginx
+      - HEADLESS_HOST=headless:5000
+      - HEADLESS_AUTH=supersecret
+      - FLAG=ECSC{d1d_u_man4ge_t0_p4y?!}
+
+  api:
+    build: ./api/
+
+  headless:
+    image: cybersecnatlab/challenge-headless:latest-manager
+    restart: unless-stopped
+    environment:
+      AUTH_TOKEN: supersecret
+      RABBITMQ_HOST: headless-rabbitmq
+      RABBITMQ_QUEUE: headless-jobs
+    depends_on:
+      - headless-rabbitmq
+
+  headless-rabbitmq:
+    image: rabbitmq:3.11
+    restart: unless-stopped
+
+  headless-worker:
+    image: cybersecnatlab/challenge-headless:latest-worker
+    restart: unless-stopped
+    environment:
+      RABBITMQ_HOST: headless-rabbitmq
+      RABBITMQ_QUEUE: headless-jobs
+    deploy:
+      replicas: 1
+    depends_on:
+      - headless-rabbitmq

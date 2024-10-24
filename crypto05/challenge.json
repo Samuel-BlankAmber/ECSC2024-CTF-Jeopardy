@@ -1,0 +1,46 @@
+{
+  "title": "Quo vadis?",
+  "description": "Do algebraic ducks go \"quo quo\"?\n\n_The timeout on the remote is 600 seconds._\n\n`nc quovadis.challs.jeopardy.ecsc2024.it 47000`",
+  "authors": [
+    "Robin Jadoul <@robinjadoul>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 15,
+  "flags": [
+    "^ECSC\\{1s0m0rph1sms_w1th_0ur_0ld_fr13nd_Evariste_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "quo_vadis.sage",
+      "type": "upload",
+      "path": "./attachments/quo_vadis.sage",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "quovadis.challs.jeopardy.ecsc2024.it",
+    "port": 47000
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 300,
+      "runnerImage": "sagemath-10.4",
+      "commandPrefix": [
+        "sage",
+        "-python"
+      ]
+    }
+  }
+}

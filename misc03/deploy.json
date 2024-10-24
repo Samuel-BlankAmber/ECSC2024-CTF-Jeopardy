@@ -1,0 +1,33 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "environment": {
+        "FLAG": "ECSC{[random 8]_Certified_Pro_Guesser_B)_[random 8]}",
+        "TIMEOUT": "300"
+      },
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/jailguesser.sh",
+          "container": "/root/jailguesser.sh",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/jailguesser.py",
+          "container": "/root/jailguesser.py",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "tcp",
+          "host": 47019,
+          "container": 1337
+        }
+      ]
+    }
+  }
+}

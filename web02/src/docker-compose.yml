@@ -1,0 +1,67 @@
+services:
+  phpmyadmin:
+    build: ./src
+    ports:
+       - "9999:80"
+    networks:
+      - backend
+    environment:
+      COOKIE_SECRET: "redacted"
+      HEADLESS_HOST: "headless:5000"
+      HEADLESS_AUTH: "supersecret"
+      CHALLENGE_URL: "http://phpmyadmin/"
+      FLAG: "ECSC{__Secure?_wh4t-if-1-used-php-8.2.0?}"
+      DB_HOST: mysql
+      MYSQL_ROOT_PASSWORD: redacted
+      CHECKER_TOKEN: redacted
+
+  console:
+    build: jsconsole
+    ports:
+      - "9998:3000"
+    restart: always
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: redacted
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: redacted
+    networks:
+      - backend
+
+  # Headless stuff below
+  headless:
+    image: cybersecnatlab/challenge-headless:latest-manager
+    restart: unless-stopped
+    environment:
+      AUTH_TOKEN: supersecret
+      RABBITMQ_HOST: headless-rabbitmq
+      RABBITMQ_QUEUE: headless-jobs
+    depends_on:
+      - headless-rabbitmq
+    networks:
+      - backend
+
+  headless-rabbitmq:
+    image: rabbitmq:3.11
+    restart: unless-stopped
+    networks:
+      - backend
+
+  headless-worker:
+    image: cybersecnatlab/challenge-headless:latest-worker
+    restart: unless-stopped
+    environment:
+      RABBITMQ_HOST: headless-rabbitmq
+      RABBITMQ_QUEUE: headless-jobs
+    deploy:
+      replicas: 4
+    depends_on:
+      - headless-rabbitmq
+    networks:
+      - backend
+
+networks:
+  backend:

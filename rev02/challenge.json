@@ -1,0 +1,41 @@
+{
+  "title": "printer",
+  "description": "I created a printer for my printing needs.\nOf course it only reads custom files as I don't want anyone else to use it...\n\n`nc printer.challs.jeopardy.ecsc2024.it 47020`",
+  "authors": [
+    "Alberto Carboneri <@Alberto247>"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "order": 52,
+  "flags": [
+    "^ECSC\\{w4it_u_w3ren'7_supp0sed_t0_use_1t_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "printer.tar.gz",
+      "type": "upload",
+      "path": "./attachments/printer.tar.gz",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "printer.challs.jeopardy.ecsc2024.it",
+    "port": 47020
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

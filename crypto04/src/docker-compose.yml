@@ -1,0 +1,8 @@
+services:
+  one_round:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '47010:1337'
+    environment:
+      - 'FLAG=ECSC{d035_7h15_d357r0y35_ASA?!_[random 8]}'

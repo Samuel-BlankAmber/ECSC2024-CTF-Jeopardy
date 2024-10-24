@@ -1,0 +1,38 @@
+<%- include('header') %>
+
+<% if (typeof err !== 'undefined') { %>
+    <div class="alert alert-danger my-3" role="alert">
+        <%= err %>
+    </div>
+<% } %>
+
+<% if (typeof msg !== 'undefined') { %>
+    <div class="alert alert-success my-3" role="alert">
+        <%= msg %>
+    </div>
+<% } %>
+
+<h1 class="my-3">New report</h1>
+<form action="/report" method="post" class="my-3 col-lg-6 mx-auto">
+    <div class="form-group">
+        <label for="url" class="my-2">Url</label>
+        <input class="form-control my-2" id="url" name="url" required />
+    </div>
+    <button type="submit" class="btn btn-primary my-2 w-100">Submit</button>
+</form>
+
+
+<br>
+
+<h1 class="my-3">Check report result</h1>
+
+<form action="/report" method="post" class="my-3 col-lg-6 mx-auto">
+    <div class="form-group">
+        <label for="job" class="my-2">Job id</label>
+        <input class="form-control my-2" id="job" name="job" required value="<%= typeof job !== 'undefined' ? job : '' %>"/>
+    </div>
+    <button type="submit" class="btn btn-primary my-2 w-100">Check</button>
+</form>
+
+
+<%- include('footer') %>

@@ -1,0 +1,41 @@
+{
+  "title": "Intent Bakery",
+  "description": "For this challenge you are required to upload an APK to exploit the vulnerability in the provided APK. Your application\nmust have its package name as `it.ecsc2024.jeopardy.exploit` and a launchable activity at\n`it.ecsc2024.jeopardy.exploit.MainActivity`.\n\nThe emulator runs Android 34 and installs the vulnerable application and then launches yours. It may require up to two\nminutes to start therefore it is normal for the web page to return 500.\n\nOn systems with SELinux enabled, you may need to run `sudo setsebool -P selinuxuser_execheap 1` for the emulator to run\nproperly.",
+  "authors": [
+    "Gianluca Altomani <@devgianlu>",
+    "Vincenzo Bonforte <@Bonfee>"
+  ],
+  "tags": [
+    "misc"
+  ],
+  "hiddenTags": [],
+  "order": 35,
+  "flags": [
+    "^ECSC\\{th3_s3cr4t_1ngr3d1en7_1s_n0t_p1n34ppl3_:\\)\\)\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "intent_bakery.zip",
+      "type": "upload",
+      "path": "./attachments/intent_bakery.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://intentbakery.challs.jeopardy.ecsc2024.it:443/"
+  },
+  "checker": {
+    "enabled": false,
+    "config": {
+      "timeout": 300
+    }
+  }
+}

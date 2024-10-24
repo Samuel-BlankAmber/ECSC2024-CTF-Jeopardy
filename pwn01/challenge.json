@@ -1,0 +1,41 @@
+{
+  "title": "Yap",
+  "description": "The yaml parser of pyyaml is soooooo slow, try out my new implementation!\nIt lacks some core functionality, but it is really fast.\n\n`nc yap.challs.jeopardy.ecsc2024.it 47015`",
+  "authors": [
+    "Fabio Zoratti <@orsobruno96>"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "order": 41,
+  "flags": [
+    "^ECSC\\{y3t_an0th3r_C_pr0gr4m_w1th_1d10t_vulns_[a-z0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "yap.zip",
+      "type": "upload",
+      "path": "./attachments/yap.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "yap.challs.jeopardy.ecsc2024.it",
+    "port": 47015
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 30
+    }
+  }
+}

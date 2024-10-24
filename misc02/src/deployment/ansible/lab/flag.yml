@@ -1,0 +1,52 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Setup dynamic flag
+  hosts: flag
+  tasks:
+    - name: Add flag folder
+      win_file:
+        path: "C:\\flag"
+        state: directory
+
+    - name: Allow "Domain Users" to read flag folder
+      win_acl:
+        inherit: "ContainerInherit, ObjectInherit"
+        path: "C:\\flag"
+        rights: "ListDirectory, Read, ReadAndExecute"
+        type: allow
+        user: "Domain Users"
+
+    - name: Allow NT AUTHORITY\System to read/write flag directory
+      win_acl:
+        inherit: "ContainerInherit, ObjectInherit"
+        path: "C:\\flag"
+        rights: "ListDirectory, Read, ReadAndExecute, Write"
+        type: allow
+        user: "NT AUTHORITY\\System"
+
+    - name: Allow Administrators to read/write flag directory
+      win_acl:
+        inherit: "ContainerInherit, ObjectInherit"
+        path: "C:\\flag"
+        rights: "ListDirectory, Read, ReadAndExecute, Write"
+        type: allow
+        user: "Administrators"
+
+    - name: Set owner of directory to NT AUTHORITY\System
+      win_owner:
+        path: "C:\\flag"
+        user: "NT AUTHORITY\\System"
+
+    - name: Remove inheritance from flag directory
+      win_acl_inheritance:
+        path: "C:\\flag"
+        state: absent
+
+    - name: Create share
+      win_share:
+        name: "Flag"
+        path: "C:\\flag"
+        description: "Flag"
+        read: "Domain Users"

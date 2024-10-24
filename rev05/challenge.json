@@ -1,0 +1,30 @@
+{
+  "title": "~&",
+  "description": "It doesn't get more low level than this...",
+  "authors": [
+    "Lorenzo Catoni <@lorenzcat>"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "order": 53,
+  "flags": [
+    "^ECSC\\{N0t\\+4nd_i5_all_y0u_n33d_[A-Za-z0-9_\\+/]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "~&.zip",
+      "type": "upload",
+      "path": "./attachments/~&.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,11 @@
+services:
+  white-pages:
+    build: .
+    ports:
+      - '80:3000'    # Map container port 3000 to host port 3000
+    volumes:
+      - ./white_pages/build:/app/public # Mount static files directory
+      - ./database:/database
+    environment:
+      - NODE_ENV=development
+    restart: always     # Restart the app if it crashes

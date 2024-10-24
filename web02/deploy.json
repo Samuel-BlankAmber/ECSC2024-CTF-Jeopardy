@@ -1,0 +1,67 @@
+{
+  "enabled": true,
+  "services": {
+    "phpmyadmin": {
+      "build": "src/src",
+      "headless": true,
+      "environment": {
+        "COOKIE_SECRET": "redacted",
+        "CHALLENGE_URL": "https://db.phpmysecureadmin.xyz/",
+        "FLAG": "ECSC{__Secure?_wh4t-if-1-used-php-8.2.0?_%s}",
+        "DB_HOST": "{{ .services.db.hostname }}",
+        "MYSQL_ROOT_PASSWORD": "redacted",
+        "CHECKER_TOKEN": "redacted"
+      },
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "db.phpmysecureadmin.xyz"
+        }
+      ],
+      "depends-on": [
+        "db"
+      ]
+    },
+    "console": {
+      "build": "src/jsconsole",
+      "expose": [
+        {
+          "type": "http",
+          "secure": false,
+          "container": 3000,
+          "hostname": "console.phpmysecureadmin.xyz"
+        }
+      ]
+    },
+    "redirect": {
+      "image": "cache.ecsc2024.it/library/nginx:1.27",
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/redirect.conf",
+          "container": "/etc/nginx/nginx.conf",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "console.phpmysecureadmin.xyz"
+        }
+      ]
+    },
+    "db": {
+      "image": "cache.ecsc2024.it/library/mysql:5.7",
+      "environment": {
+        "MYSQL_ROOT_PASSWORD": "redacted",
+        "MYSQL_DATABASE": "test",
+        "MYSQL_USER": "test",
+        "MYSQL_PASSWORD": "redacted"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "F:/Gits/Challenge-154/src/PizzaFPGA"  

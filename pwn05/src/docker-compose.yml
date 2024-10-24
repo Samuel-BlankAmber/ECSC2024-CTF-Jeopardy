@@ -1,0 +1,23 @@
+services:
+  baby-vma:
+    build:
+        context: .
+    restart: unless-stopped
+    init: true
+    privileged: true
+    volumes:
+      - ./run.py:/home/user/chall:ro
+      - ./run.sh:/home/user/run.sh:ro
+      - ./bzImage:/home/user/bzImage:ro
+      - ./initramfs.cpio.gz:/home/user/initramfs.cpio.gz:ro
+      - ./flag.img:/home/user/flag.img:ro
+    ports:
+      - '47011:1337'
+    environment:
+      - 'FLAG=ECSC{gg_maybe_next_time_use_VM_IO_00000000}' # DO NOT CHANGE FLAG LENGTH
+      - 'FLAG_IN_ENV=true'
+      - 'FORWARD_STDERR=true'
+      - 'TIMEOUT=60'
+      - 'TEMPDIRS=/home/user/tmp'
+      - 'POW_BITS=27'
+      - 'POW_BYPASS_HASH=cbe6b75d4c67c9ba9ff6631ea8465460004f0af5'

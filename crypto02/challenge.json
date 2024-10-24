@@ -1,0 +1,41 @@
+{
+  "title": "RSATogether",
+  "description": "RSA is cool, but I don't wanna do it alone. I found a way to do RSA together with my friends.\n\n_The timeout on the remote is 60 seconds._\n\n`nc rsatogether.challs.jeopardy.ecsc2024.it 47001`",
+  "authors": [
+    "Lorenzo Demeio <@Devrar>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 12,
+  "flags": [
+    "^ECSC\\{hav1ng_t00_m4ny_fr13nds_1s_b4d_f0r_crypt0_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "rsatogether.sage",
+      "type": "upload",
+      "path": "./attachments/rsatogether.sage",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "rsatogether.challs.jeopardy.ecsc2024.it",
+    "port": 47001
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 20
+    }
+  }
+}

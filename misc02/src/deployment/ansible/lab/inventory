@@ -1,0 +1,16 @@
+[default]
+dca dict_key=dca ansible_host=10.151.2.100 ansible_user="{{credentials.dca.username}}" ansible_password="{{credentials.dca.password}}"
+dcb dict_key=dcb ansible_host=10.151.2.101 ansible_user="{{credentials.dcb.username}}" ansible_password="{{credentials.dcb.password}}"
+
+[all:vars]
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_operation_timeout_sec=400
+ansible_winrm_read_timeout_sec=500
+ansible_winrm_kerberos_delegation=true
+
+[trusted]
+dcb
+
+[flag]
+dcb

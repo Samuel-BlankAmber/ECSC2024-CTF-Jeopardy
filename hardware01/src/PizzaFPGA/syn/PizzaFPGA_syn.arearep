@@ -1,0 +1,47 @@
+----------------------------------------------------------------------
+Report for cell TOP_ENTITY.TECH
+Register bits:  77 of 7209 (1.068%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        34          100.0
+                            FD1P3AX        42          100.0
+                            FD1P3AY         2          100.0
+                            FD1P3IX         1          100.0
+                            FD1S3AX        31          100.0
+                            FD1S3AY         1          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                            L6MUX21         1          100.0
+                               LUT4       156          100.0
+                                 OB         4          100.0
+                              PFUMX        13          100.0
+SUB MODULES
+                          FSM_CHALL         1
+                         PRINT_FLAG         1
+                              TOTAL       294
+----------------------------------------------------------------------
+Report for cell PRINT_FLAG.v1
+Instance Path : print_flag
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        34          100.0
+                            FD1P3AX        10           23.8
+                            FD1P3AY         1           50.0
+                            FD1P3IX         1          100.0
+                            FD1S3AX        31          100.0
+                            FD1S3AY         1          100.0
+                               LUT4        23           14.7
+                              PFUMX         7           53.8
+                              TOTAL       108
+----------------------------------------------------------------------
+Report for cell FSM_CHALL.v1
+Instance Path : chall
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        32           76.2
+                            FD1P3AY         1           50.0
+                            L6MUX21         1          100.0
+                               LUT4       128           82.1
+                              PFUMX         6           46.2
+                              TOTAL       168

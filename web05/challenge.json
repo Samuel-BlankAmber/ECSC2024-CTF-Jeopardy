@@ -1,0 +1,40 @@
+{
+  "title": "A Fever Dream",
+  "description": "I dreamed about PHP last night. The dream was similar to this challenge.\n\n[https://afeverdream.challs.jeopardy.ecsc2024.it](https://afeverdream.challs.jeopardy.ecsc2024.it)",
+  "authors": [
+    "Riccardo Bonafede <@bonaff>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 65,
+  "flags": [
+    "^ECSC\\{pHp_f3ver_dre4ms_4re_w1ld_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "dream.zip",
+      "type": "upload",
+      "path": "./attachments/dream.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://afeverdream.challs.jeopardy.ecsc2024.it:443/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

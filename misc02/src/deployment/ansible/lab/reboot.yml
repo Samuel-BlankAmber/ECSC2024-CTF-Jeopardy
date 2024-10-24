@@ -1,0 +1,11 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Reboot servers
+  hosts: all
+  tasks:
+    - name: Reboot
+      win_reboot:
+        reboot_timeout: 900
+        post_reboot_delay: 100

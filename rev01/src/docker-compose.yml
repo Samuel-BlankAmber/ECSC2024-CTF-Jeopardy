@@ -1,0 +1,12 @@
+services:
+  boolean:
+    image: cybersecnatlab/challenge-jail@sha256:245f0de5bf5f9e9030dca9d9450672eea8d39474ea78a7902b93dff60f9060ad
+    restart: unless-stopped
+    init: true
+    privileged: true
+    volumes:
+      - './chall/chall:/home/user/chall:ro'
+    ports:
+      - '47017:1337'
+    environment:
+      - 'FLAG=ECSC{b1n4ry_c1rcu175_60_brrr_[random 8]}'

@@ -1,0 +1,6 @@
+---
+- import_playbook: packages.yml
+- import_playbook: routing.yml
+- import_playbook: wireguard.yml
+- import_playbook: ansible.yml
+- import_playbook: flag-placer.yml

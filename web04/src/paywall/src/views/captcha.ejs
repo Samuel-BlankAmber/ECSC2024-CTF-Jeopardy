@@ -1,0 +1,39 @@
+<%- include('header') %>
+
+<div class="d-flex flex-column min-vh-100 col-lg-6 mx-auto my-2">
+
+<% if (typeof err !== 'undefined') { %>
+    <div class="alert alert-danger" role="alert">
+        <%= err %>
+    </div>
+<% } %>
+<h1>Are you a human?</h1>
+
+<p><%= captcha_i + 1 %> / <%= captcha_n %></p>
+
+<div class="progress my-3">
+    <div class="progress-bar" role="progressbar" style="width: <%= ((captcha_i + 1) / captcha_n) * 100 %>%;" aria-valuenow="<%= ((captcha_i + 1) / captcha_n) * 100 %>" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<img class="mx-3 my-3" src="/captcha.png" alt="captcha">
+
+
+
+<form action="/captcha" method="post" class="my-3">
+    <div class="form-group">
+        <label for="captcha" class="my-2">Please enter the captcha value</label>
+        <input type="text" class="form-control my-2" id="captcha" name="captcha" required autofocus> 
+    </div>
+    <button type="submit" class="btn btn-primary my-2 w-100">Submit</button>
+</form>
+
+<p class="mt-auto">
+    We are sorry for the inconvenience, but we need to make sure you are a human.
+    <br>
+    We had some issues with bots, now we require <%= captcha_n %> captchas.
+</p>
+
+</div>
+
+
+<%- include('footer') %>

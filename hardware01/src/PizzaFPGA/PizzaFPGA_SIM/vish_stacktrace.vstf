@@ -1,0 +1,30 @@
+# Current time Fri Sep 20 15:50:37 2024
+# ModelSim - Lattice FPGA Edition Stack Trace
+# Program = vish
+# Id = "2023.3"
+# Version = "2023.07"
+# Date = "Jul 18 2023"
+# Platform = win32loem
+
+Exception c0000005 has occurred at address 007dfcd4. Traceback:
+# 0    0x007dfcd4: 'Sqlite3_Unload + 0xa5e94'
+# 1    0x007bd790: 'Sqlite3_Unload + 0x83950'
+# 2    0x007bfdfd: 'Sqlite3_Unload + 0x85fbd'
+# 3    0x007c2288: 'Sqlite3_Unload + 0x88448'
+# 4    0x007c024b: 'Sqlite3_Unload + 0x8640b'
+# 5    0x007bdb52: 'Sqlite3_Unload + 0x83d12'
+# 6    0x006ab3bd: 'Mtirpc_Init + 0x1640fd'
+# 7    0x004f7789: '<unknown (@0x4f7789)>'
+# 8    0x504929be: 'TclInvokeStringCommand + 0xbe'
+# 9    0x504948e1: 'TclNREvalObjv + 0x5c1'
+# 10   0x50494933: 'TclNRRunCallbacks + 0x43'
+# 11   0x504961ec: 'Tcl_EvalObjEx + 0x2c'
+# 12   0x5028ce39: 'Itcl_EvalMemberCode + 0x329'
+# 13   0x50505c8f: 'Tcl_FindHashEntry + 0x1f'
+# 14   0x5055a678: 'TclpFree + 0x48'
+# 15   0x5058a73c: 'Tcl_MutexUnlock + 0xc'
+# 16   0x5028db90: 'Itcl_ExecProc + 0xc0'
+# 17   0x504948e1: 'TclNREvalObjv + 0x5c1'
+StackWalk failed 299
+# End of Stack Trace
+

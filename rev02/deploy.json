@@ -1,0 +1,35 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src/src",
+      "environment": {
+        "FLAG": "ECSC{w4it_u_w3ren'7_supp0sed_t0_use_1t_[random 8]}",
+        "FLAG_IN_ENV": "true",
+        "TEMPDIRS": "/tmp:/home/user/.config",
+        "LOG_STDERR": "true"
+      },
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/src/printer",
+          "container": "/home/user/printer",
+          "readonly": true
+        },
+        {
+          "type": "bind",
+          "host": "src/src/server.py",
+          "container": "/home/user/chall",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "tcp",
+          "host": 47020,
+          "container": 1337
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "0": {
+    "name": "NOP",
+    "number": "0000",
+    "phone_username": "0000",
+    "phone_password": "I648V7HGB8UX1HNK",
+    "PSTN_password": "AJWI79DL9E085OAC",
+    "phone_admin_password": "MA3IY4ELJXXLRSPM"
+  },
+  "1": {
+    "name": "Albania",
+    "number": "0001",
+    "phone_username": "0001",
+    "phone_password": "GNCG4N35UBS2FO82",
+    "PSTN_password": "60FWBMF2NQ02HM37",
+    "phone_admin_password": "E4VOUCYKSHP0878T"
+  },
+  "2": {
+    "name": "Australia",
+    "number": "0002",
+    "phone_username": "0002",
+    "phone_password": "XDXWSEXRDQ30X8UP",
+    "PSTN_password": "MM7DX66B5CARJZGI",
+    "phone_admin_password": "0HB34JJVMAMZQWD3"
+  },
+  "3": {
+    "name": "Austria",
+    "number": "0003",
+    "phone_username": "0003",
+    "phone_password": "RDF9YQKEFFXOGJXF",
+    "PSTN_password": "NFJ3EI6YC6NBISGY",
+    "phone_admin_password": "CRM6LLMVTW3YYA5H"
+  },
+  "4": {
+    "name": "Belgium",
+    "number": "0004",
+    "phone_username": "0004",
+    "phone_password": "RXZX539NQ4A425UP",
+    "PSTN_password": "MOW8TMTCRLO8RB07",
+    "phone_admin_password": "092JWO6YE8W55SDG"
+  },
+  "5": {
+    "name": "Bulgaria",
+    "number": "0005",
+    "phone_username": "0005",
+    "phone_password": "1PCN5OM74MUS4CZ1",
+    "PSTN_password": "LNQIYQEPXCGN2O0X",
+    "phone_admin_password": "5C5FI3KP0V8ZQSDJ"
+  },
+  "6": {
+    "name": "Canada",
+    "number": "0006",
+    "phone_username": "0006",
+    "phone_password": "13IDPRQYX58E0EGW",
+    "PSTN_password": "X0I7KJ95ZMYDC8VQ",
+    "phone_admin_password": "CV0VV0LIXFFGUDHL"
+  },
+  "7": {
+    "name": "Costa Rica",
+    "number": "0007",
+    "phone_username": "0007",
+    "phone_password": "DCJ0H8G9LTB7P599",
+    "PSTN_password": "YFNBT2GJ6UV2NAXD",
+    "phone_admin_password": "1JWKRPLHYICEGYAH"
+  },
+  "8": {
+    "name": "Croatia",
+    "number": "0008",
+    "phone_username": "0008",
+    "phone_password": "JDPRE5RJZNFBGNWT",
+    "PSTN_password": "1AX8VN8YC7ZY5QB4",
+    "phone_admin_password": "MPYWG9RJ86OHKRTB"
+  },
+  "9": {
+    "name": "Cyprus",
+    "number": "0009",
+    "phone_username": "0009",
+    "phone_password": "JXUSNV808Z1SWAA2",
+    "PSTN_password": "Y4VGJB1DZNRMKX50",
+    "phone_admin_password": "0OVIO4OWFPLSS17F"
+  },
+  "10": {
+    "name": "Czech Republic",
+    "number": "0010",
+    "phone_username": "0010",
+    "phone_password": "E8UFEW61EYMO8P0J",
+    "PSTN_password": "1ZGDO5LKGP25NRAT"
+  },
+  "11": {
+    "name": "Denmark",
+    "number": "0011",
+    "phone_username": "0011",
+    "phone_password": "0UCGX11VC4Q8G0WF",
+    "PSTN_password": "ITB7UE4C7W0PU0BS",
+    "phone_admin_password": "WV5UE9YN4O440LGL"
+  },
+  "12": {
+    "name": "Estonia",
+    "number": "0012",
+    "phone_username": "0012",
+    "phone_password": "EPOYWS0I1N0571L7",
+    "PSTN_password": "ZJAV195UJP81EWGO",
+    "phone_admin_password": "1QTFCFY0WEAVGUHW"
+  },
+  "13": {
+    "name": "Finland",
+    "number": "0013",
+    "phone_username": "0013",
+    "phone_password": "98E0K2VKTCGUGWL3",
+    "PSTN_password": "QV8A4M7UI3L8GECZ"
+  },
+  "14": {
+    "name": "France",
+    "number": "0014",
+    "phone_username": "0014",
+    "phone_password": "S9LUQ817XO11WWUW",
+    "PSTN_password": "9ZJOJTUXT9XVURCK"
+  },
+  "15": {
+    "name": "Germany",
+    "number": "0015",
+    "phone_username": "0015",
+    "phone_password": "NV4NORAKFIW98SSN",
+    "PSTN_password": "SEBZ2GJFQ4552ZGT",
+    "phone_admin_password": "IDIP8JTQ6PL3FLND"
+  },
+  "16": {
+    "name": "Greece",
+    "number": "0016",
+    "phone_username": "0016",
+    "phone_password": "X895IFNH3OAT8UCA",
+    "PSTN_password": "8I6WBCI4M16UCLHR",
+    "phone_admin_password": "607FPPMI49DF2XX0"
+  },
+  "17": {
+    "name": "Hungary",
+    "number": "0017",
+    "phone_username": "0017",
+    "phone_password": "KVRBVF6E6UVLG2RE",
+    "PSTN_password": "3MP0TGMYQPS3K88E"
+  },
+  "18": {
+    "name": "Iceland",
+    "number": "0018",
+    "phone_username": "0018",
+    "phone_password": "8CY0CCZIAWL9JWK0",
+    "PSTN_password": "DV7AU8N0S976I6QH",
+    "phone_admin_password": "16HZUSV2ADFSHBSL"
+  },
+  "19": {
+    "name": "Ireland",
+    "number": "0019",
+    "phone_username": "0019",
+    "phone_password": "SJ6RD7A9YU0GK1YJ",
+    "PSTN_password": "G8ATA4S9L23FVDJX",
+    "phone_admin_password": "BJT3R9Y6QZ8JVNK4"
+  },
+  "20": {
+    "name": "Italy",
+    "number": "0020",
+    "phone_username": "0020",
+    "phone_password": "URUNIGWG3AKBERHB",
+    "PSTN_password": "GT6X3CCMCKTXBGGW",
+    "phone_admin_password": "JR97XUWSN0SU5N2U"
+  },
+  "21": {
+    "name": "Kosovo",
+    "number": "0021",
+    "phone_username": "0021",
+    "phone_password": "VS5Q2MT70JS9QTU1",
+    "PSTN_password": "A0UAZA3KSKFWTLZ2",
+    "phone_admin_password": "M2G0EEML5L3RDM9A"
+  },
+  "22": {
+    "name": "Latvia",
+    "number": "0022",
+    "phone_username": "0022",
+    "phone_password": "04KO9W8TNWVNE8KV",
+    "PSTN_password": "960EN8N5LRIOMLZP",
+    "phone_admin_password": "8ZCGMHSCEA3X9TI0"
+  },
+  "23": {
+    "name": "Liechtenstein",
+    "number": "0023",
+    "phone_username": "0023",
+    "phone_password": "YN1RMQJIO489WX8C",
+    "PSTN_password": "U5S9DUTDBVKLX42H"
+  },
+  "24": {
+    "name": "Luxembourg",
+    "number": "0024",
+    "phone_username": "0024",
+    "phone_password": "202ZHFIL9R23J683",
+    "PSTN_password": "ZB6M5PAT5MISBLRP",
+    "phone_admin_password": "57E420YN64A6OXU6"
+  },
+  "25": {
+    "name": "Netherlands",
+    "number": "0025",
+    "phone_username": "0025",
+    "phone_password": "LF5PLKSAPDEVQMNU",
+    "PSTN_password": "XH9KWGHPL5AJYW2G"
+  },
+  "26": {
+    "name": "Norway",
+    "number": "0026",
+    "phone_username": "0026",
+    "phone_password": "ZV9UMLZX8RBGVQBQ",
+    "PSTN_password": "W0ABT3YUFIUWO1NO"
+  },
+  "27": {
+    "name": "Poland",
+    "number": "0027",
+    "phone_username": "0027",
+    "phone_password": "6HXRQF1LZZX4IC8D",
+    "PSTN_password": "8N9G9P05PQRVTS4S",
+    "phone_admin_password": "W44WKYNNCSFRJ374"
+  },
+  "28": {
+    "name": "Portugal",
+    "number": "0028",
+    "phone_username": "0028",
+    "phone_password": "36B74EWS1P2DCIMR",
+    "PSTN_password": "2YNNZ3DE5MFMMIIN",
+    "phone_admin_password": "4Z13GBD8FH3ZV0B7"
+  },
+  "29": {
+    "name": "Romania",
+    "number": "0029",
+    "phone_username": "0029",
+    "phone_password": "SV5WCGODIE5M6M3L",
+    "PSTN_password": "H9DUZO276YZQEMIX"
+  },
+  "30": {
+    "name": "Serbia",
+    "number": "0030",
+    "phone_username": "0030",
+    "phone_password": "7WZLTERDDJXIBJ0O",
+    "PSTN_password": "LOQGSGM142BUBG3V",
+    "phone_admin_password": "DHM0OEOQ52WMSDDM"
+  },
+  "31": {
+    "name": "Singapore",
+    "number": "0031",
+    "phone_username": "0031",
+    "phone_password": "6775V5FVT9AXNYP1",
+    "PSTN_password": "POPV0AAEHSB99EGQ"
+  },
+  "32": {
+    "name": "Slovakia",
+    "number": "0032",
+    "phone_username": "0032",
+    "phone_password": "XLC3Z1M6N7ZE1XK4",
+    "PSTN_password": "DUFSPZGTJT5UBF1Y"
+  },
+  "33": {
+    "name": "Slovenia",
+    "number": "0033",
+    "phone_username": "0033",
+    "phone_password": "PU62U7CKM8SSIA8Y",
+    "PSTN_password": "ADEA75RZK1U7SCO7",
+    "phone_admin_password": "7J3Z7LJYVXBVQJ01"
+  },
+  "34": {
+    "name": "Spain",
+    "number": "0034",
+    "phone_username": "0034",
+    "phone_password": "CW66N5QTXKZMRK0X",
+    "PSTN_password": "YT8M0ADH4JHRPX4P",
+    "phone_admin_password": "GGYJT3XQLTNKSKZQ"
+  },
+  "35": {
+    "name": "Sweden",
+    "number": "0035",
+    "phone_username": "0035",
+    "phone_password": "NYP8WV2A5E6KC41L",
+    "PSTN_password": "5330HP31VXZF838T"
+  },
+  "36": {
+    "name": "Switzerland",
+    "number": "0036",
+    "phone_username": "0036",
+    "phone_password": "6KBJKCHT28BE1PND",
+    "PSTN_password": "U83U7RQHX0LY27IA"
+  },
+  "37": {
+    "name": "USA",
+    "number": "0037",
+    "phone_username": "0037",
+    "phone_password": "NFUONYYG0ZB800VY",
+    "PSTN_password": "GELIQV10II6C7DYP",
+    "phone_admin_password": "NUH1V6I75ANR4YR7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Secure PIN",
+  "description": "Look at my new numeric PIN protected flag, you cannot guess it!\n\nNote: the documentation is in the `UART to I2C` challenge",
+  "authors": [
+    "Giovanni Minotti <@Giotino>"
+  ],
+  "tags": [
+    "hardware"
+  ],
+  "hiddenTags": [],
+  "order": 22,
+  "flags": [
+    "^ECSC\\{1t_0nly_t4k3s_s0m3_r3s3ts\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

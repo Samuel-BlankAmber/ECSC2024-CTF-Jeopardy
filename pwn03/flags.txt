@@ -1,0 +1,1 @@
+^ECSC{[0-9a-f]{8}_P4C_a1nt_g0t_n0th1ng_0n_u_o7_[0-9a-f]{8}}$

@@ -1,0 +1,31 @@
+---
+# Load data
+- import_playbook: data.yml
+
+- name: Add user
+  hosts: all
+  vars:
+    username: "{{lab.hosts[dict_key].user.username}}"
+    password: "{{lab.hosts[dict_key].user.password}}"
+  tasks:
+    - name: Create user
+      ansible.windows.win_user:
+        name: "{{username}}"
+        password: "{{password}}"
+        state: present
+        user_cannot_change_password: true
+
+- name: Add admin
+  hosts: dev
+  vars:
+    username: "{{lab.hosts[dict_key].admin.username}}"
+    password: "{{lab.hosts[dict_key].admin.password}}"
+  tasks:
+    - name: Create admin
+      ansible.windows.win_user:
+        name: "{{username}}"
+        password: "{{password}}"
+        state: present
+        groups: Administrators
+        groups_action: add
+        user_cannot_change_password: true

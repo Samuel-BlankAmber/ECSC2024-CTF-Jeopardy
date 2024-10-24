@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/22/2024 14:29:24
+#Project Location: F:/Gits/Challenge-154/src/PizzaFPGA; Project name: PizzaFPGA
+prj_project open "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA.ldf"
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+prj_run Export -impl syn -task Jedecgen
+#Stop recording: 9/22/2024 15:17:40

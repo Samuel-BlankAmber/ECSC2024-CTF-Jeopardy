@@ -1,0 +1,41 @@
+{
+  "title": "Secret Keeper",
+  "description": "I'm so good at keeping secrets, I even forget them myself!\nI'll give you a chance to find out the secret I've been keeping...\nLet's see if you can find it!\n\n`nc secretkeeper.challs.jeopardy.ecsc2024.it 47014`",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "order": 42,
+  "flags": [
+    "^ECSC\\{1nt3RrUp73d_R3ad_c4n_R3ve4l_MY_S3cR37s_D:_[a-z0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "secret-keeper.tar.gz",
+      "type": "upload",
+      "path": "./attachments/secret-keeper.tar.gz",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "secretkeeper.challs.jeopardy.ecsc2024.it",
+    "port": 47014
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 120
+    }
+  }
+}

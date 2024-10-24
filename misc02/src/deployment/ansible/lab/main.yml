@@ -1,0 +1,8 @@
+---
+- import_playbook: update.yml
+- import_playbook: server.yml
+- import_playbook: forest.yml
+- import_playbook: trust.yml
+- import_playbook: flag.yml
+- import_playbook: cleanup.yml
+- import_playbook: reboot.yml

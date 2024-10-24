@@ -1,0 +1,4 @@
+#Start recording tcl command: 10/5/2024 09:59:44
+#Project Location: F:/Gits/Challenge-154/src/PizzaFPGA; Project name: PizzaFPGA
+prj_project open "F:/Gits/Challenge-154/src/PizzaFPGA/PizzaFPGA.ldf"
+#Stop recording: 10/5/2024 10:10:31

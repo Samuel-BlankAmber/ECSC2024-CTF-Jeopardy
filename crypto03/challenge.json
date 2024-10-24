@@ -1,0 +1,46 @@
+{
+  "title": "Smithing contest",
+  "description": "Ok, so, I didn't read the part about this being a *cryptography* competition - my bad.\nNow it's too late to back out though, please help me figure this out!\n\nnote: it is recommended to use sagemath-10.4 to run the challenge locally, due to performance reasons.\n\n_The timeout on the remote is 120 seconds._\n\n`nc smithing.challs.jeopardy.ecsc2024.it 47012`",
+  "authors": [
+    "Francesco Felet <@PhiQuadro>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 13,
+  "flags": [
+    "^ECSC\\{eprint_p4p3r5_c4n_b3_r3al1y_s0m3thin6_4t_tim3s_[0-9a-f]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "smithing.sage",
+      "type": "upload",
+      "path": "./attachments/smithing.sage",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "tcp",
+    "host": "smithing.challs.jeopardy.ecsc2024.it",
+    "port": 47012
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 90,
+      "runnerImage": "sagemath-10.4",
+      "commandPrefix": [
+        "sage",
+        "-python"
+      ]
+    }
+  }
+}

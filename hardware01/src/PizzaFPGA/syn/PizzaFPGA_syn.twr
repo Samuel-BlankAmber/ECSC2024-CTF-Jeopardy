@@ -1,0 +1,1691 @@
+
+Loading design for application trce from file pizzafpga_syn.ncd.
+Design name: TOP_ENTITY
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/Program Files/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Sat Oct 05 21:18:17 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o PizzaFPGA_syn.twr -gui -msgset F:/Gits/Challenge-154/src/PizzaFPGA/promote.xml PizzaFPGA_syn.ncd PizzaFPGA_syn.prf 
+Design file:     pizzafpga_syn.ncd
+Preference file: pizzafpga_syn.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY 60.000000 MHz ;
+            4058 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 5.282ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i2  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.235ns  (69.0% logic, 31.0% route), 35 logic levels.
+
+ Constraint Details:
+
+     11.235ns physical path delay print_flag/SLICE_16 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.282ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_16 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17B.CLK to     R21C17B.Q1 print_flag/SLICE_16 (from fpga_gpio_clock_c)
+ROUTE        14     1.242     R21C17B.Q1 to     R22C17B.A1 print_flag/char_idx_2
+C1TOFCO_DE  ---     0.786     R22C17B.A1 to    R22C17B.FCO print_flag/SLICE_0
+ROUTE         1     0.000    R22C17B.FCO to    R22C17C.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146    R22C17C.FCI to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.235   (69.0% logic, 31.0% route), 35 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17B.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.315ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i3  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.202ns  (69.0% logic, 31.0% route), 34 logic levels.
+
+ Constraint Details:
+
+     11.202ns physical path delay print_flag/SLICE_14 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.315ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_14 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17C.CLK to     R21C17C.Q0 print_flag/SLICE_14 (from fpga_gpio_clock_c)
+ROUTE        15     1.236     R21C17C.Q0 to     R22C17C.A0 print_flag/char_idx_3
+C0TOFCO_DE  ---     0.905     R22C17C.A0 to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.202   (69.0% logic, 31.0% route), 34 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17C.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.376ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i2  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i30  (to fpga_gpio_clock_c +)
+
+   Delay:              11.141ns  (68.7% logic, 31.3% route), 34 logic levels.
+
+ Constraint Details:
+
+     11.141ns physical path delay print_flag/SLICE_16 to print_flag/SLICE_25 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.376ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_16 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17B.CLK to     R21C17B.Q1 print_flag/SLICE_16 (from fpga_gpio_clock_c)
+ROUTE        14     1.242     R21C17B.Q1 to     R22C17B.A1 print_flag/char_idx_2
+C1TOFCO_DE  ---     0.786     R22C17B.A1 to    R22C17B.FCO print_flag/SLICE_0
+ROUTE         1     0.000    R22C17B.FCO to    R22C17C.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146    R22C17C.FCI to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOF1_DE  ---     0.569    R21C20D.FCI to     R21C20D.F1 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 print_flag/char_idx_31_N_52_30 (to fpga_gpio_clock_c)
+                  --------
+                   11.141   (68.7% logic, 31.3% route), 34 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17B.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.409ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i3  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i30  (to fpga_gpio_clock_c +)
+
+   Delay:              11.108ns  (68.7% logic, 31.3% route), 33 logic levels.
+
+ Constraint Details:
+
+     11.108ns physical path delay print_flag/SLICE_14 to print_flag/SLICE_25 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.409ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_14 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17C.CLK to     R21C17C.Q0 print_flag/SLICE_14 (from fpga_gpio_clock_c)
+ROUTE        15     1.236     R21C17C.Q0 to     R22C17C.A0 print_flag/char_idx_3
+C0TOFCO_DE  ---     0.905     R22C17C.A0 to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOF1_DE  ---     0.569    R21C20D.FCI to     R21C20D.F1 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 print_flag/char_idx_31_N_52_30 (to fpga_gpio_clock_c)
+                  --------
+                   11.108   (68.7% logic, 31.3% route), 33 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17C.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.428ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i2  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i29  (to fpga_gpio_clock_c +)
+
+   Delay:              11.089ns  (68.6% logic, 31.4% route), 34 logic levels.
+
+ Constraint Details:
+
+     11.089ns physical path delay print_flag/SLICE_16 to print_flag/SLICE_25 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.428ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_16 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17B.CLK to     R21C17B.Q1 print_flag/SLICE_16 (from fpga_gpio_clock_c)
+ROUTE        14     1.242     R21C17B.Q1 to     R22C17B.A1 print_flag/char_idx_2
+C1TOFCO_DE  ---     0.786     R22C17B.A1 to    R22C17B.FCO print_flag/SLICE_0
+ROUTE         1     0.000    R22C17B.FCO to    R22C17C.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146    R22C17C.FCI to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOF0_DE  ---     0.517    R21C20D.FCI to     R21C20D.F0 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 print_flag/char_idx_31_N_52_29 (to fpga_gpio_clock_c)
+                  --------
+                   11.089   (68.6% logic, 31.4% route), 34 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17B.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.428ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i4  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.089ns  (68.6% logic, 31.4% route), 34 logic levels.
+
+ Constraint Details:
+
+     11.089ns physical path delay print_flag/SLICE_14 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.428ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_14 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17C.CLK to     R21C17C.Q1 print_flag/SLICE_14 (from fpga_gpio_clock_c)
+ROUTE        13     1.242     R21C17C.Q1 to     R22C17C.A1 print_flag/char_idx_4
+C1TOFCO_DE  ---     0.786     R22C17C.A1 to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.089   (68.6% logic, 31.4% route), 34 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17C.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.461ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i3  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i29  (to fpga_gpio_clock_c +)
+
+   Delay:              11.056ns  (68.6% logic, 31.4% route), 33 logic levels.
+
+ Constraint Details:
+
+     11.056ns physical path delay print_flag/SLICE_14 to print_flag/SLICE_25 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.461ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_14 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17C.CLK to     R21C17C.Q0 print_flag/SLICE_14 (from fpga_gpio_clock_c)
+ROUTE        15     1.236     R21C17C.Q0 to     R22C17C.A0 print_flag/char_idx_3
+C0TOFCO_DE  ---     0.905     R22C17C.A0 to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOF0_DE  ---     0.517    R21C20D.FCI to     R21C20D.F0 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 print_flag/char_idx_31_N_52_29 (to fpga_gpio_clock_c)
+                  --------
+                   11.056   (68.6% logic, 31.4% route), 33 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17C.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.467ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i5  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.050ns  (68.6% logic, 31.4% route), 33 logic levels.
+
+ Constraint Details:
+
+     11.050ns physical path delay print_flag/SLICE_12 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.467ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_12 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17D.CLK to     R21C17D.Q0 print_flag/SLICE_12 (from fpga_gpio_clock_c)
+ROUTE         2     1.230     R21C17D.Q0 to     R22C17D.A0 print_flag/char_idx_5
+C0TOFCO_DE  ---     0.905     R22C17D.A0 to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.050   (68.6% logic, 31.4% route), 33 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17D.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.502ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i1  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.015ns  (71.5% logic, 28.5% route), 35 logic levels.
+
+ Constraint Details:
+
+     11.015ns physical path delay print_flag/SLICE_16 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.502ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_16 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17B.CLK to     R21C17B.Q0 print_flag/SLICE_16 (from fpga_gpio_clock_c)
+ROUTE        13     0.903     R21C17B.Q0 to     R22C17B.B0 print_flag/char_idx_1
+C0TOFCO_DE  ---     0.905     R22C17B.B0 to    R22C17B.FCO print_flag/SLICE_0
+ROUTE         1     0.000    R22C17B.FCO to    R22C17C.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146    R22C17C.FCI to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.015   (71.5% logic, 28.5% route), 35 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17B.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.506ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i0  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i31  (to fpga_gpio_clock_c +)
+
+   Delay:              11.011ns  (71.7% logic, 28.3% route), 36 logic levels.
+
+ Constraint Details:
+
+     11.011ns physical path delay print_flag/SLICE_17 to print_flag/SLICE_24 meets
+     16.667ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 16.517ns) by 5.506ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_17 to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R21C17A.CLK to     R21C17A.Q1 print_flag/SLICE_17 (from fpga_gpio_clock_c)
+ROUTE        11     0.872     R21C17A.Q1 to     R22C17A.A1 print_flag/char_idx_0
+C1TOFCO_DE  ---     0.786     R22C17A.A1 to    R22C17A.FCO print_flag/SLICE_13
+ROUTE         1     0.000    R22C17A.FCO to    R22C17B.FCI print_flag/n1996
+FCITOFCO_D  ---     0.146    R22C17B.FCI to    R22C17B.FCO print_flag/SLICE_0
+ROUTE         1     0.000    R22C17B.FCO to    R22C17C.FCI print_flag/n1997
+FCITOFCO_D  ---     0.146    R22C17C.FCI to    R22C17C.FCO print_flag/SLICE_30
+ROUTE         1     0.000    R22C17C.FCO to    R22C17D.FCI print_flag/n1998
+FCITOFCO_D  ---     0.146    R22C17D.FCI to    R22C17D.FCO print_flag/SLICE_22
+ROUTE         1     0.000    R22C17D.FCO to    R22C18A.FCI print_flag/n1999
+FCITOFCO_D  ---     0.146    R22C18A.FCI to    R22C18A.FCO print_flag/SLICE_15
+ROUTE         1     0.000    R22C18A.FCO to    R22C18B.FCI print_flag/n2000
+FCITOFCO_D  ---     0.146    R22C18B.FCI to    R22C18B.FCO print_flag/SLICE_11
+ROUTE         1     0.000    R22C18B.FCO to    R22C18C.FCI print_flag/n2001
+FCITOFCO_D  ---     0.146    R22C18C.FCI to    R22C18C.FCO print_flag/SLICE_8
+ROUTE         1     0.000    R22C18C.FCO to    R22C18D.FCI print_flag/n2002
+FCITOFCO_D  ---     0.146    R22C18D.FCI to    R22C18D.FCO print_flag/SLICE_7
+ROUTE         1     0.000    R22C18D.FCO to    R22C19A.FCI print_flag/n2003
+FCITOFCO_D  ---     0.146    R22C19A.FCI to    R22C19A.FCO print_flag/SLICE_1
+ROUTE         1     0.000    R22C19A.FCO to    R22C19B.FCI print_flag/n2004
+FCITOFCO_D  ---     0.146    R22C19B.FCI to    R22C19B.FCO print_flag/SLICE_31
+ROUTE         1     0.000    R22C19B.FCO to    R22C19C.FCI print_flag/n2005
+FCITOFCO_D  ---     0.146    R22C19C.FCI to    R22C19C.FCO print_flag/SLICE_28
+ROUTE         1     0.000    R22C19C.FCO to    R22C19D.FCI print_flag/n2006
+FCITOFCO_D  ---     0.146    R22C19D.FCI to    R22C19D.FCO print_flag/SLICE_26
+ROUTE         1     0.000    R22C19D.FCO to    R22C20A.FCI print_flag/n2007
+FCITOFCO_D  ---     0.146    R22C20A.FCI to    R22C20A.FCO print_flag/SLICE_23
+ROUTE         1     0.000    R22C20A.FCO to    R22C20B.FCI print_flag/n2008
+FCITOFCO_D  ---     0.146    R22C20B.FCI to    R22C20B.FCO print_flag/SLICE_21
+ROUTE         1     0.000    R22C20B.FCO to    R22C20C.FCI print_flag/n2009
+FCITOFCO_D  ---     0.146    R22C20C.FCI to    R22C20C.FCO print_flag/SLICE_20
+ROUTE         1     0.000    R22C20C.FCO to    R22C20D.FCI print_flag/n2010
+FCITOFCO_D  ---     0.146    R22C20D.FCI to    R22C20D.FCO print_flag/SLICE_19
+ROUTE         1     0.000    R22C20D.FCO to    R22C21A.FCI print_flag/n2011
+FCITOF1_DE  ---     0.569    R22C21A.FCI to     R22C21A.F1 print_flag/SLICE_18
+ROUTE         5     0.916     R22C21A.F1 to     R21C22C.D1 print_flag/nibble_select_N_138
+CTOF_DEL    ---     0.452     R21C22C.D1 to     R21C22C.F1 print_flag/SLICE_121
+ROUTE         1     1.324     R21C22C.F1 to     R21C17A.A1 print_flag/n1403
+C1TOFCO_DE  ---     0.786     R21C17A.A1 to    R21C17A.FCO print_flag/SLICE_17
+ROUTE         1     0.000    R21C17A.FCO to    R21C17B.FCI print_flag/n2012
+FCITOFCO_D  ---     0.146    R21C17B.FCI to    R21C17B.FCO print_flag/SLICE_16
+ROUTE         1     0.000    R21C17B.FCO to    R21C17C.FCI print_flag/n2013
+FCITOFCO_D  ---     0.146    R21C17C.FCI to    R21C17C.FCO print_flag/SLICE_14
+ROUTE         1     0.000    R21C17C.FCO to    R21C17D.FCI print_flag/n2014
+FCITOFCO_D  ---     0.146    R21C17D.FCI to    R21C17D.FCO print_flag/SLICE_12
+ROUTE         1     0.000    R21C17D.FCO to    R21C18A.FCI print_flag/n2015
+FCITOFCO_D  ---     0.146    R21C18A.FCI to    R21C18A.FCO print_flag/SLICE_10
+ROUTE         1     0.000    R21C18A.FCO to    R21C18B.FCI print_flag/n2016
+FCITOFCO_D  ---     0.146    R21C18B.FCI to    R21C18B.FCO print_flag/SLICE_9
+ROUTE         1     0.000    R21C18B.FCO to    R21C18C.FCI print_flag/n2017
+FCITOFCO_D  ---     0.146    R21C18C.FCI to    R21C18C.FCO print_flag/SLICE_6
+ROUTE         1     0.000    R21C18C.FCO to    R21C18D.FCI print_flag/n2018
+FCITOFCO_D  ---     0.146    R21C18D.FCI to    R21C18D.FCO print_flag/SLICE_5
+ROUTE         1     0.000    R21C18D.FCO to    R21C19A.FCI print_flag/n2019
+FCITOFCO_D  ---     0.146    R21C19A.FCI to    R21C19A.FCO print_flag/SLICE_4
+ROUTE         1     0.000    R21C19A.FCO to    R21C19B.FCI print_flag/n2020
+FCITOFCO_D  ---     0.146    R21C19B.FCI to    R21C19B.FCO print_flag/SLICE_3
+ROUTE         1     0.000    R21C19B.FCO to    R21C19C.FCI print_flag/n2021
+FCITOFCO_D  ---     0.146    R21C19C.FCI to    R21C19C.FCO print_flag/SLICE_2
+ROUTE         1     0.000    R21C19C.FCO to    R21C19D.FCI print_flag/n2022
+FCITOFCO_D  ---     0.146    R21C19D.FCI to    R21C19D.FCO print_flag/SLICE_33
+ROUTE         1     0.000    R21C19D.FCO to    R21C20A.FCI print_flag/n2023
+FCITOFCO_D  ---     0.146    R21C20A.FCI to    R21C20A.FCO print_flag/SLICE_32
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI print_flag/n2024
+FCITOFCO_D  ---     0.146    R21C20B.FCI to    R21C20B.FCO print_flag/SLICE_29
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI print_flag/n2025
+FCITOFCO_D  ---     0.146    R21C20C.FCI to    R21C20C.FCO print_flag/SLICE_27
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI print_flag/n2026
+FCITOFCO_D  ---     0.146    R21C20D.FCI to    R21C20D.FCO print_flag/SLICE_25
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI print_flag/n2027
+FCITOF0_DE  ---     0.517    R21C21A.FCI to     R21C21A.F0 print_flag/SLICE_24
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 print_flag/char_idx_31_N_52_31 (to fpga_gpio_clock_c)
+                  --------
+                   11.011   (71.7% logic, 28.3% route), 36 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C17A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     5.973    PR19D.PADDI to    R21C21A.CLK fpga_gpio_clock_c
+                  --------
+                    5.973   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   87.835MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY 60.000000 MHz ;               |   60.000 MHz|   87.835 MHz|  35  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: fpga_gpio_clock_c   Source: fpga_gpio_clock.PAD   Loads: 55
+   Covered under: FREQUENCY 60.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4058 paths, 1 nets, and 566 connections (68.28% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Sat Oct 05 21:18:17 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o PizzaFPGA_syn.twr -gui -msgset F:/Gits/Challenge-154/src/PizzaFPGA/promote.xml PizzaFPGA_syn.ncd PizzaFPGA_syn.prf 
+Design file:     pizzafpga_syn.ncd
+Preference file: pizzafpga_syn.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY 60.000000 MHz ;
+            4058 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i30  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i30  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_25 to print_flag/SLICE_25 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_25 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20D.CLK to     R21C20D.Q1 print_flag/SLICE_25 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C20D.Q1 to     R21C20D.A1 print_flag/char_idx_30
+CTOF_DEL    ---     0.101     R21C20D.A1 to     R21C20D.F1 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 print_flag/char_idx_31_N_52_30 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i29  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i29  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_25 to print_flag/SLICE_25 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_25 to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20D.CLK to     R21C20D.Q0 print_flag/SLICE_25 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C20D.Q0 to     R21C20D.A0 print_flag/char_idx_29
+CTOF_DEL    ---     0.101     R21C20D.A0 to     R21C20D.F0 print_flag/SLICE_25
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 print_flag/char_idx_31_N_52_29 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i21  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i21  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_33 to print_flag/SLICE_33 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_33 to print_flag/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C19D.CLK to     R21C19D.Q0 print_flag/SLICE_33 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C19D.Q0 to     R21C19D.A0 print_flag/char_idx_21
+CTOF_DEL    ---     0.101     R21C19D.A0 to     R21C19D.F0 print_flag/SLICE_33
+ROUTE         1     0.000     R21C19D.F0 to    R21C19D.DI0 print_flag/char_idx_31_N_52_21 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i17  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i17  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_3 to print_flag/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_3 to print_flag/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C19B.CLK to     R21C19B.Q0 print_flag/SLICE_3 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C19B.Q0 to     R21C19B.A0 print_flag/char_idx_17
+CTOF_DEL    ---     0.101     R21C19B.A0 to     R21C19B.F0 print_flag/SLICE_3
+ROUTE         1     0.000     R21C19B.F0 to    R21C19B.DI0 print_flag/char_idx_31_N_52_17 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19B.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19B.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i13  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i13  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_5 to print_flag/SLICE_5 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_5 to print_flag/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C18D.CLK to     R21C18D.Q0 print_flag/SLICE_5 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C18D.Q0 to     R21C18D.A0 print_flag/char_idx_13
+CTOF_DEL    ---     0.101     R21C18D.A0 to     R21C18D.F0 print_flag/SLICE_5
+ROUTE         1     0.000     R21C18D.F0 to    R21C18D.DI0 print_flag/char_idx_31_N_52_13 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C18D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C18D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i5  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i5  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_12 to print_flag/SLICE_12 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_12 to print_flag/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C17D.CLK to     R21C17D.Q0 print_flag/SLICE_12 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C17D.Q0 to     R21C17D.A0 print_flag/char_idx_5
+CTOF_DEL    ---     0.101     R21C17D.A0 to     R21C17D.F0 print_flag/SLICE_12
+ROUTE         1     0.000     R21C17D.F0 to    R21C17D.DI0 print_flag/char_idx_31_N_52_5 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C17D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C17D.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i25  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i25  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_29 to print_flag/SLICE_29 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_29 to print_flag/SLICE_29:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20B.CLK to     R21C20B.Q0 print_flag/SLICE_29 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C20B.Q0 to     R21C20B.A0 print_flag/char_idx_25
+CTOF_DEL    ---     0.101     R21C20B.A0 to     R21C20B.F0 print_flag/SLICE_29
+ROUTE         1     0.000     R21C20B.F0 to    R21C20B.DI0 print_flag/char_idx_31_N_52_25 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_29:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20B.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_29:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20B.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i23  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i23  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_32 to print_flag/SLICE_32 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_32 to print_flag/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20A.CLK to     R21C20A.Q0 print_flag/SLICE_32 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C20A.Q0 to     R21C20A.A0 print_flag/char_idx_23
+CTOF_DEL    ---     0.101     R21C20A.A0 to     R21C20A.F0 print_flag/SLICE_32
+ROUTE         1     0.000     R21C20A.F0 to    R21C20A.DI0 print_flag/char_idx_31_N_52_23 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20A.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20A.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i27  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i27  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_27 to print_flag/SLICE_27 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_27 to print_flag/SLICE_27:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20C.CLK to     R21C20C.Q0 print_flag/SLICE_27 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C20C.Q0 to     R21C20C.A0 print_flag/char_idx_27
+CTOF_DEL    ---     0.101     R21C20C.A0 to     R21C20C.F0 print_flag/SLICE_27
+ROUTE         1     0.000     R21C20C.F0 to    R21C20C.DI0 print_flag/char_idx_31_N_52_27 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_27:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20C.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_27:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C20C.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              print_flag/char_idx_i19  (from fpga_gpio_clock_c +)
+   Destination:    FF         Data in        print_flag/char_idx_i19  (to fpga_gpio_clock_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay print_flag/SLICE_2 to print_flag/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path print_flag/SLICE_2 to print_flag/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C19C.CLK to     R21C19C.Q0 print_flag/SLICE_2 (from fpga_gpio_clock_c)
+ROUTE         2     0.132     R21C19C.Q0 to     R21C19C.A0 print_flag/char_idx_19
+CTOF_DEL    ---     0.101     R21C19C.A0 to     R21C19C.F0 print_flag/SLICE_2
+ROUTE         1     0.000     R21C19C.F0 to    R21C19C.DI0 print_flag/char_idx_31_N_52_19 (to fpga_gpio_clock_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path fpga_gpio_clock to print_flag/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19C.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path fpga_gpio_clock to print_flag/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     2.243    PR19D.PADDI to    R21C19C.CLK fpga_gpio_clock_c
+                  --------
+                    2.243   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY 60.000000 MHz ;               |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: fpga_gpio_clock_c   Source: fpga_gpio_clock.PAD   Loads: 55
+   Covered under: FREQUENCY 60.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4058 paths, 1 nets, and 566 connections (68.28% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

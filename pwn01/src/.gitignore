@@ -1,0 +1,9 @@
+gadg*.txt
+
+# This stuff was in the root folder .gitignore
+.cache
+build
+yap.egg-info
+gdbscript.txt
+maps*
+*.pyc

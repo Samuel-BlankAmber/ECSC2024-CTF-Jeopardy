@@ -1,0 +1,42 @@
+{
+  "title": "Good old days",
+  "description": "Behold our new invention, the phone!\nWith this service you are now closer than ever to your friends!\nPlace calls, or place calls, or even place calls to anyone willing to receive them!\n\nWe pre-configured a device for you to test prior to our grand release. Please provide a valuable feedback.\n\n_Note: incoming calls are by default blocked to preserve your peace. You may change this setting at any time by calling your system configuration number at 0099. You may see which teams are currently allowing calls at the address: [http://10.250.254.3/](http://10.250.254.3/)._\n\n_Note 2: to solve the challenge you are NOT required to attack the phone on your desk. It is not required to exploit vulnerabilities in the Yealink software. It is also forbidden to physically damage the phone._\n\n_Note 3: the flag's characters are all uppercase._",
+  "authors": [
+    "Alberto Carboneri <@Alberto247>"
+  ],
+  "tags": [
+    "misc"
+  ],
+  "hiddenTags": [],
+  "order": 32,
+  "flags": [
+    "^ECSC\\{JUS7_D0NT_G0_4ROUND_M3SS1NG_W1TH_P30PLE5_PHON3S_N0W!_[0-9A-F]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "README",
+      "type": "upload",
+      "path": "./attachments/README",
+      "dynamic": false
+    },
+    {
+      "name": "asterisk_pstn.zip",
+      "type": "upload",
+      "path": "./attachments/asterisk_pstn.zip",
+      "dynamic": false
+    },
+    {
+      "name": "asterisk_team.zip",
+      "type": "upload",
+      "path": "./attachments/asterisk_team.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

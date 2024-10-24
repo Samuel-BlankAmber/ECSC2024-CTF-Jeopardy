@@ -1,0 +1,1 @@
+^ECSC\{ch3w1n5_m0r3_7h4n_y0u_c4n_b1t_[0-9a-f]{8}\}$

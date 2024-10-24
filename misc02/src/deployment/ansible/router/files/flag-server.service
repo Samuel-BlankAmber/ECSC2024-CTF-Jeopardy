@@ -1,0 +1,12 @@
+[Unit]
+Description=Flag Server
+
+[Service]
+WorkingDirectory=/root/flag-server
+ExecStart=/usr/local/bin/uvicorn main:app --port 54137 --host 0.0.0.0
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

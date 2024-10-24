@@ -1,0 +1,39 @@
+---
+- name: Setup Ansible
+  hosts: all
+  tasks:
+    - name: Install necessary Python packages
+      pip:
+        name:
+          - ansible
+          - pywinrm
+        state: present
+        break_system_packages: true
+
+    - name: Remove Ansible directory
+      file:
+        path: /home/deploy/lab
+        state: absent
+        force: yes
+
+    - name: Copy Ansible directory
+      copy:
+        src: "{{ playbook_dir }}/../lab"
+        dest: /home/deploy
+        force: yes
+
+    - name: Copy config
+      copy:
+        src: "{{ playbook_dir }}/../../config/config.json"
+        dest: /home/deploy/config.json
+        force: yes
+
+    - name: Copy deploy script
+      copy:
+        src: "{{ playbook_dir }}/files/deploy.sh"
+        dest: /home/deploy/deploy.sh
+        mode: 0755
+        force: yes
+
+    - name: Install Ansible galaxy requirements
+      command: /home/deploy/.local/bin/ansible-galaxy install -r /home/deploy/lab/requirements.yml

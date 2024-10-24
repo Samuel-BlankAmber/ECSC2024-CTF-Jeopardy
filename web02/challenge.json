@@ -1,0 +1,40 @@
+{
+  "title": "phpMySecureAdmin",
+  "description": "Let's do some programming together!!!\n\nWe offer a demo for phpMyAdmin and a pretty js console.\n\nphpMyAdmin: [https://db.phpmysecureadmin.xyz](https://db.phpmysecureadmin.xyz)\n\njsConsole: [http://console.phpmysecureadmin.xyz](http://console.phpmysecureadmin.xyz)\n\nNote: Local deployment doesn't have https on phpmyadmin. The bot reaches the challenge with the same domains.",
+  "authors": [
+    "Alessandro Mizzaro <@Alemmi>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 63,
+  "flags": [
+    "^ECSC\\{__Secure\\?_wh4t-if-1-used-php-8\\.2\\.0\\?_[a-f0-9]{8}\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "src.zip",
+      "type": "upload",
+      "path": "./attachments/src.zip",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "https://phpmysecureadmin.xyz:443/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 300
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "services": {
+    "app": {
+      "build": "src",
+      "environment": {
+        "FLAG": "ECSC{pHp_f3ver_dre4ms_4re_w1ld_%s}"
+      },
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "afeverdream.challs.jeopardy.ecsc2024.it"
+        }
+      ]
+    }
+  }
+}

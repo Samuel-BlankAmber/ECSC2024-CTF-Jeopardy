@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "services": {
+    "nginx": {
+      "image": "cache.ecsc2024.it/library/nginx:1.25",
+      "environment": {
+        "NGINX_ENVSUBST_OUTPUT_DIR": "/etc/nginx",
+        "BACKEND_HOST": "{{ .services.backend.hostname }}:8080",
+        "FRONTEND_HOST": "{{ .services.frontend.hostname }}:3000"
+      },
+      "volumes": [
+        {
+          "type": "bind",
+          "host": "src/nginx.conf",
+          "container": "/etc/nginx/templates/nginx.conf.template",
+          "readonly": true
+        }
+      ],
+      "expose": [
+        {
+          "type": "http",
+          "secure": true,
+          "container": 80,
+          "hostname": "karmavault.challs.jeopardy.ecsc2024.it"
+        }
+      ],
+      "depends-on": [
+        "backend",
+        "frontend"
+      ]
+    },
+    "backend": {
+      "build": "src/backend"
+    },
+    "frontend": {
+      "build": "src/frontend"
+    }
+  }
+}

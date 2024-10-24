@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DEFAULT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ASSERT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>F:/Gits/Challenge-154/src/PizzaFPGA/syn</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/fsm_chall.vhd(6): </Dynamic>
+            <Dynamic>fsm_chall</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/fsm_chall.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/fsm_chall.vhd(17): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/fsm_chall.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd(7): </Dynamic>
+            <Dynamic>print_flag</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd(16): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd(4): </Dynamic>
+            <Dynamic>top_entity</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd(13): </Dynamic>
+            <Dynamic>structural</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd(11): </Dynamic>
+            <Dynamic>TOP_ENTITY</Dynamic>
+            <Dynamic>STRUCTURAL</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/top_entity.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\chall/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd(52): </Dynamic>
+            <Dynamic>\print_flag/current_char_i7</Dynamic>
+            <Navigation>f:/gits/challenge-154/src/pizzafpga/vhdl/print_flag.vhd</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>fpga_gpio_clock_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>fpga_gpio_clock</Dynamic>
+            <Dynamic>PR19D</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>62061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>fpga_gpio_clock_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DEFAULT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ASSERT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

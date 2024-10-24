@@ -1,0 +1,17 @@
+services:
+  ticket-champions:
+    build: .
+    restart: unless-stopped
+    environment:
+      TARGET_PASSWORD: redacted
+      FLAG: ECSC{ju57_4_51mpl3_c5p7+p4r4m373r_p0llu710n_n07h1n6_m0r3}
+    ports:
+      - "80:80"
+
+  bot:
+    build: ./bot
+    environment:
+      WEB_DOM: http://ticket-champions
+      TARGET_PASSWORD: redacted
+    ports:
+      - "3000:3000"

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  tele:
+    #image: mlan/asterisk:mini
+    build: .
+    network_mode: host
+    environment:
+      - SYSLOG_LEVEL=100      # Logging
+      - HOSTNAME=asterisk.local
+      - URL=${URL}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro    # Use host timezone
+      - ./config:/etc/asterisk
+      - ./sounds:/sounds
+      - ./en:/var/lib/asterisk/sounds/en
+      - ./scripts:/scripts
+      - ./recordings:/recordings
+
+  whitepage-update:
+    image: cache.ecsc2024.it/curlimages/curl:latest
+    entrypoint: ["/bin/sh"]
+    command: -c "curl -X PUT ${URL}/0" # ' curl 
+
+volumes:
+  tele-conf:                                # Persistent storage
