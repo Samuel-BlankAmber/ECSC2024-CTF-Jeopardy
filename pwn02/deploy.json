@@ -31,7 +31,7 @@
         }
       ],
       "environment": {
-        "FLAG": "ECSC{1nt3RrUp73d_R3ad_c4n_R3ve4l_MY_S3cR37s_D:_[random 8]}",
+        "FLAG": "ECSC{1nt3RrUp73d_R3ad_c4n_R3ve4l_MY_S3cR37s_D:}",
         "FLAG_IN_ENV": "true",
         "SET_INTERPRETER": "/home/user/ld-linux.so",
         "SET_RPATH": "/home/user/libs",

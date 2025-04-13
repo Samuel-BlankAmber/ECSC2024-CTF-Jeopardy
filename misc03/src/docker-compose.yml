@@ -11,5 +11,5 @@ services:
     ports:
       - '47019:1337'
     environment:
-      - 'FLAG=ECSC{[random 8]_Certified_Pro_Guesser_B)_[random 8]}'
+      - 'FLAG=ECSC{[random 8]_Certified_Pro_Guesser_B)}'
       - 'TIMEOUT=300'

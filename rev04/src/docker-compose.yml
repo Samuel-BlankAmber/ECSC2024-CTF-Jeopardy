@@ -10,5 +10,5 @@ services:
     ports:
       - '47018:1337'
     environment:
-      - 'FLAG=ECSC{is_th1z__go0d_enough__4_you?_[random 8]}'
+      - 'FLAG=ECSC{is_th1z__go0d_enough__4_you?}'
       - 'FLAG_IN_ENV=true'

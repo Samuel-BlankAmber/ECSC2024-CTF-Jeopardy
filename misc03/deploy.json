@@ -4,7 +4,7 @@
     "app": {
       "build": "src",
       "environment": {
-        "FLAG": "ECSC{[random 8]_Certified_Pro_Guesser_B)_[random 8]}",
+        "FLAG": "ECSC{[random 8]_Certified_Pro_Guesser_B)}",
         "TIMEOUT": "300"
       },
       "volumes": [

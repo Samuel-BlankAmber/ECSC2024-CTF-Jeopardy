@@ -11,7 +11,7 @@
         }
       ],
       "environment": {
-        "FLAG": "openECSC{hav1ng_t00_m4ny_fr13nds_1s_b4d_f0r_crypt0_[random 8]}"
+        "FLAG": "openECSC{hav1ng_t00_m4ny_fr13nds_1s_b4d_f0r_crypt0}"
       }
     }
   }

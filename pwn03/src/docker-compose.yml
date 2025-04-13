@@ -21,6 +21,6 @@ services:
     environment:
       #- 'NETWORK=true' # Debug
       - 'POW_BITS=30'
-      - 'FLAG=ECSC{[random 8]_P4C_a1nt_g0t_n0th1ng_0n_u_o7_[random 8]}'
+      - 'FLAG=ECSC{[random 8]_P4C_a1nt_g0t_n0th1ng_0n_u_o7}'
       - 'FORWARD_STDERR=true'
       - 'TIMEOUT=30'

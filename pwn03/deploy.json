@@ -22,7 +22,7 @@
       "environment": {
         "POW_BITS": "30",
         "POW_BYPASS_HASH": "c03a53cf3ac725d8fa5d6e6af11a6f0d0c8116c6",
-        "FLAG": "ECSC{[random 8]_P4C_a1nt_g0t_n0th1ng_0n_u_o7_[random 8]}",
+        "FLAG": "ECSC{[random 8]_P4C_a1nt_g0t_n0th1ng_0n_u_o7}",
         "FORWARD_STDERR": "true",
         "TIMEOUT": "30"
       },

@@ -5,4 +5,4 @@ services:
     ports:
       - '47000:1337'
     environment:
-      - 'FLAG=ECSC{1s0m0rph1sms_w1th_0ur_0ld_fr13nd_Evariste_[random 8]}'
+      - 'FLAG=ECSC{1s0m0rph1sms_w1th_0ur_0ld_fr13nd_Evariste}'
