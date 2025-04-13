@@ -1,4 +1,4 @@
-FROM cache.ecsc2024.it/library/nginx:1.27
+FROM nginx:1.27
 
 RUN apt-get update && apt-get install -y apache2-utils
 

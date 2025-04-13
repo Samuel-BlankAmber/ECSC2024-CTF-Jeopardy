@@ -18,7 +18,7 @@ services:
       - ./recordings:/recordings
 
   whitepage-update:
-    image: cache.ecsc2024.it/curlimages/curl:latest
+    image: curlimages/curl:latest
     entrypoint: ["/bin/sh"]
     command: -c "curl -X PUT ${URL}/0" # ' curl 
 

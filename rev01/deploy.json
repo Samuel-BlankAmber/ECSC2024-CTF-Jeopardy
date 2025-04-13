@@ -2,7 +2,7 @@
   "enabled": true,
   "services": {
     "app": {
-      "image": "cache.ecsc2024.it/cybersecnatlab/challenge-jail@sha256:245f0de5bf5f9e9030dca9d9450672eea8d39474ea78a7902b93dff60f9060ad",
+      "image": "cybersecnatlab/challenge-jail@sha256:245f0de5bf5f9e9030dca9d9450672eea8d39474ea78a7902b93dff60f9060ad",
       "volumes": [
         {
           "type": "bind",

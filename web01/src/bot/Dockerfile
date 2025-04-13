@@ -1,4 +1,4 @@
-FROM cache.ecsc2024.it/library/node:18
+FROM node:18
 
 WORKDIR /app
 COPY package.json package-lock.json ./

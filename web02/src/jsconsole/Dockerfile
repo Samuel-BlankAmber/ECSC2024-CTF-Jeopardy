@@ -1,4 +1,4 @@
-FROM cache.ecsc2024.it/library/node:16
+FROM node:16
 
 COPY . /app
 

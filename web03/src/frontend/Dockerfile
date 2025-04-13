@@ -1,4 +1,4 @@
-FROM cache.ecsc2024.it/library/node:21-alpine AS build
+FROM node:21-alpine AS build
 WORKDIR /app
 
 COPY . .
@@ -7,7 +7,7 @@ RUN npm install -g pnpm
 RUN pnpm install --frozen-lockfile
 RUN pnpm run build
 
-FROM cache.ecsc2024.it/library/node:21-alpine
+FROM node:21-alpine
 WORKDIR /app
 
 COPY --from=build /app/build/ /app/package.json /app/pnpm-lock.yaml ./

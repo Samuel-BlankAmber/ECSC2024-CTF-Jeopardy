@@ -36,7 +36,7 @@
       ]
     },
     "redirect": {
-      "image": "cache.ecsc2024.it/library/nginx:1.27",
+      "image": "nginx:1.27",
       "volumes": [
         {
           "type": "bind",
@@ -55,7 +55,7 @@
       ]
     },
     "db": {
-      "image": "cache.ecsc2024.it/library/mysql:5.7",
+      "image": "mysql:5.7",
       "environment": {
         "MYSQL_ROOT_PASSWORD": "redacted",
         "MYSQL_DATABASE": "test",

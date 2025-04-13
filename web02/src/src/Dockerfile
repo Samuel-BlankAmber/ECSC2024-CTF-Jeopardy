@@ -1,4 +1,4 @@
-FROM cache.ecsc2024.it/library/php:8.2.0-apache
+FROM php:8.2.0-apache
 
 
 RUN apt-get update && \

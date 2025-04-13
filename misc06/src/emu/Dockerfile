@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied_
 # See the License for the specific language governing permissions and
 # limitations under the License_
-FROM cache.ecsc2024.it/library/alpine:3.18 AS unzipper
+FROM alpine:3.18 AS unzipper
 RUN apk add --update unzip wget
 
 WORKDIR /tmp
@@ -25,7 +25,7 @@ RUN unzip -u -o /tmp/emulator-linux_x64-12325540.zip -d /
 RUN wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 RUN unzip -u -o /tmp/platform-tools-latest-linux.zip -d /
 
-FROM cache.ecsc2024.it/nvidia/opengl:1.2-glvnd-runtime-ubuntu20.04
+FROM nvidia/opengl:1.2-glvnd-runtime-ubuntu20.04
 ENV NVIDIA_DRIVER_CAPABILITIES ${NVIDIA_DRIVER_CAPABILITIES},display
 
 # Now we configure the user account under which we will be running the emulator
