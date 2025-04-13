@@ -23,7 +23,7 @@ CHALL_URL = os.environ.get("URL", "https://ticket.challs.jeopardy.ecsc2024.it")
 if CHALL_URL.endswith("/"):
     CHALL_URL = CHALL_URL[:-1]
 
-BOT_URL = CHALL_URL.replace('ticket.', 'ticket-bot.')
+BOT_URL = os.environ.get("BOT_URL", "https://ticket-bot.challs.jeopardy.ecsc2024.it")
 
 def check():
     # Register
