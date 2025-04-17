@@ -1,0 +1,8 @@
+services:
+  crypto_offtopic:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '47025:1337'
+    environment:
+      - 'FLAG=ECSC{the_way_he_m0v3s_is_so_frigging_tuff}'
