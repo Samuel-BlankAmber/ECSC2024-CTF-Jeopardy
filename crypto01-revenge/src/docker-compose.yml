@@ -1,5 +1,5 @@
 services:
-  crypto_offtopic:
+  crypto_offtopic_revenge:
     build: .
     restart: unless-stopped
     ports:
