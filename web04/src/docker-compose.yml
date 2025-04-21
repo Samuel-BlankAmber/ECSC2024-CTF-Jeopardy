@@ -2,7 +2,7 @@ services:
   nginx:
     build: ./nginx/
     ports:
-      - "80:80"
+      - "42012:80"
     environment:
       - PASSWORD=secretpassword
       - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
